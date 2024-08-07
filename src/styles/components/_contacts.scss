@@ -1,0 +1,482 @@
+.contacts-main {
+  width: 100%;
+}
+.contacts-first-fluid {
+  width: 100%;
+  padding: 180px 30px 0px;
+  margin-bottom: 100px;
+  @include sm {
+    padding: 140px 0px 0;
+  }
+}
+.contacts-first-centered {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+}
+.contacts-first-title {
+  font-family: "Druk Wide Cyr";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 44px;
+  color: #b6b6b6;
+  margin-bottom: 80px;
+  @include md {
+    font-size: 28px;
+    text-align: center;
+  }
+  @include sm {
+    font-size: 19px;
+    margin-bottom: 40px;
+  }
+}
+.contacts-first-content {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  @include md {
+    flex-direction: column;
+  }
+}
+.contacts-first-left {
+  width: 40.7%;
+  position: relative;
+  @include md {
+    width: 100%;
+  }
+  @include sm {
+    padding: 0 20px;
+  }
+}
+.contacts-first-left-wrapper {
+  width: 100%;
+  margin-bottom: 60px;
+  position: relative;
+  @include sm {
+    margin-bottom: 30px;
+  }
+}
+.contacts-first-left-wrapper-head {
+  width: 100%;
+  position: relative;
+  margin-bottom: 30px;
+  span {
+    display: inline-block;
+    background: #fff;
+    font-family: "Druk Wide Cyr";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #24e2ab;
+    padding-right: 29px;
+    position: relative;
+    z-index: 2;
+    @include sm {
+      font-size: 14px;
+      padding-right: 10px;
+    }
+  }
+}
+
+.contacts-first-left-wrapper-head-rect {
+  position: absolute;
+  top: 49%;
+  left: 0;
+  background: #24e2ab;
+  width: 100%;
+  height: 2px;
+  z-index: 1;
+  @include sm {
+    height: 1px;
+  }
+}
+.contacts-first-left-bg1 {
+  width: 95px;
+  height: 95px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  img {
+    width: 100%;
+    object-fit: contain;
+  }
+  @include md {
+    display: none;
+  }
+}
+.contacts-first-left-inner {
+  @include md {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+.contacts-first-left-item {
+  margin-bottom: 40px;
+  @include md {
+    width: 47%;
+  }
+  @include sm {
+    width: 100%;
+  }
+}
+.contacts-first-left-item-name {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #afafaf;
+  margin-bottom: 8px;
+  @include sm {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+.contacts-first-left-item-link {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+  display: block;
+  color: #000000;
+  @include sm {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+.contacts-first-right {
+  width: 54%;
+  padding: 60px;
+  background: #ffe1d0;
+  border-radius: 40px;
+  @include md {
+    width: 100%;
+    margin-top: 100px;
+  }
+  @include sm {
+    margin-top: 70px;
+    padding: 40px 20px;
+    border-radius: 0;
+  }
+}
+
+.contacts-first-right-tabs {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  margin-bottom: 50px;
+  @include sm {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+}
+.contacts-first-right-tabs-item {
+  width: 46%;
+  height: 50px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  span {
+    position: relative;
+    z-index: 2;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #ff5c00;
+  }
+  &.active {
+    .contacts-first-right-tabs-item-bg {
+      background: #ff5c00;
+    }
+    span {
+      color: #fff;
+    }
+  }
+  &:hover {
+    .contacts-first-right-tabs-item-bg {
+      background: #ff5c00;
+    }
+    span {
+      color: #fff;
+    }
+  }
+  @include sm {
+    width: 96%;
+    &:first-child {
+      margin-bottom: 15px;
+    }
+  }
+}
+.contacts-first-right-tabs-item-bg {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border-radius: 9px;
+  transform: skew(-25deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.contacts-first-right-form {
+  width: 100%;
+}
+.contacts-form-question {
+  display: none;
+  &.show {
+    display: block;
+  }
+}
+.contacts-form-call {
+  display: none;
+  &.show {
+    display: block;
+  }
+}
+.contacts-first-right-form-input {
+  width: 100%;
+  position: relative;
+  margin-bottom: 40px;
+  @include sm {
+    margin-bottom: 30px;
+  }
+  input {
+    padding: 0 20px;
+    width: 100%;
+    height: 50px;
+    background: #ffffff;
+    border-radius: 10px;
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #0d0c1d;
+    border: none;
+    &::placeholder {
+      color: #b6b6b6;
+    }
+    @include sm {
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+  .error-text {
+    position: absolute;
+    bottom: -24px;
+    right: 0;
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #e61777;
+    display: none;
+  }
+  &.error {
+    border: 1px solid #e61777;
+    .error-text {
+      display: block;
+    }
+  }
+}
+
+.contacts-first-right-form-btn {
+  cursor: pointer;
+  width: 100%;
+  height: 50px;
+  background: #ff5c00;
+  border-radius: 10px;
+  border: none;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    background: linear-gradient(267.87deg, #ffb800 -14.66%, #ff5c00 39.02%, #ff380c 99.52%);
+  }
+}
+
+.contacts-school-fluid {
+  width: 100%;
+  padding: 0 30px;
+  margin: 160px 0;
+  @include sm {
+    padding: 0 20px;
+    margin: 100px 0;
+  }
+}
+.contacts-school-centered {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+}
+.contacts-school-title {
+  font-family: "Druk Wide Cyr";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  text-transform: uppercase;
+  color: #b6b6b6;
+  margin-bottom: 80px;
+  @include md {
+    text-align: center;
+  }
+  @include sm {
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 42px;
+  }
+}
+.contacts-school-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  @include md {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 18px;
+  }
+  @include sm {
+    gap: 0;
+    display: block;
+    .slick-slide {
+      margin: 0 5px;
+    }
+  }
+}
+.contacts-school-item {
+  height: 400px;
+  position: relative;
+  @include md {
+    height: 345px;
+  }
+  @include sm {
+    height: 280px;
+  }
+}
+.contacts-school-item-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+}
+.contacts-school-item-wpap {
+  width: 375px;
+  height: 140px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #fff3ec;
+  border-radius: 0 110px 0 0;
+  padding: 25px 20px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @include md {
+    width: 323px;
+    height: 128px;
+    padding: 20px 15px 23px;
+  }
+  @include sm {
+    height: 110px;
+    width: 100%;
+    padding: 20px 15px;
+  }
+}
+.contacts-school-item-wrap-title {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  color: #ff5c00;
+  width: 80%;
+  @include md {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    color: #ff5c00;
+  }
+}
+.contacts-school-item-wrap-map {
+  display: flex;
+}
+.contacts-school-item-wrap-map-icon {
+}
+.contacts-school-item-wrap-map-text {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #232323;
+  margin-left: 5px;
+}
+
+.contacts-school-slider {
+  .slick-dots {
+    width: 100%;
+    padding: 0 30px;
+    bottom: -65px;
+    li {
+      width: 10px;
+      button:before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #ffe1d0;
+        opacity: 1;
+      }
+
+      &.slick-active {
+        button:before {
+          background: #ff5c00;
+        }
+      }
+    }
+    @include sm {
+      bottom: -40px;
+    }
+  }
+}

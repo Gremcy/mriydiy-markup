@@ -1,0 +1,12 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.parameterHints.enabled": false,
+  "prettier.singleQuote": true,
+  "editor.semanticTokenColorCustomizations": {},
+  "cSpell.words": [
+    "приєднатися",
+    "хоче"
+  ],
+  "editor.fontSize": 15
+}

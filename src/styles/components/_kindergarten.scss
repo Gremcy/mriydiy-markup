@@ -1,0 +1,1495 @@
+.kindergarten-page {
+  width: 100%;
+}
+.kindergarten-main {
+  width: 100%;
+  overflow-x: hidden;
+}
+.kindergarten-first-fluid {
+  width: 100%;
+  padding: 0px 30px 0;
+  margin-bottom: 185px;
+  @include md {
+    padding: 0px 30px 0;
+    margin-bottom: 170px;
+  }
+  @include sm {
+    padding: 0px 20px 0;
+    margin-bottom: 100px;
+  }
+}
+.kindergarten-first-centered {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include sm {
+    flex-direction: column-reverse;
+  }
+}
+.kindergarten-first-left {
+  width: 39.952%;
+  @include md {
+    width: 49%;
+  }
+  @include sm {
+    width: 100%;
+  }
+}
+.kindergarten-first-title {
+  font-family: 'Druk Wide Cyr';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 87px;
+  color: #ff5c00;
+  margin-bottom: 20px;
+  @include md {
+    font-size: 55px;
+    margin-bottom: 10px;
+  }
+  @include sm {
+    text-align: center;
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 10px;
+  }
+}
+.kindergarten-first-description {
+  max-width: 600px;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #232323;
+  margin-bottom: 26px;
+  @include md {
+    font-size: 26px;
+    line-height: 120%;
+    margin-bottom: 40px;
+    br {
+      display: none;
+    }
+  }
+  @include sm {
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+    padding: 0 20px;
+  }
+}
+.kindergarten-first-address {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #232323;
+  margin-bottom: 60px;
+  @include md {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 40px;
+  }
+  @include sm {
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+}
+
+.kindergarten-first-right {
+  width: 50.79%;
+  position: relative;
+  @include md {
+    width: 316px;
+    height: 311px;
+  }
+  @include sm {
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+  }
+}
+.kindergarten-icon {
+  position: absolute;
+  bottom: 82px;
+  left: 153px;
+  z-index: 4;
+  width: 111px;
+  height: 111px;
+  @include md {
+    bottom: 45px;
+    left: 77px;
+    width: 55px;
+    height: 55px;
+    img {
+      width: 100%;
+    }
+  }
+}
+.kindergarten-first-image {
+  position: absolute;
+  top: 3%;
+  left: 0;
+  width: 100%;
+  height: 94%;
+  z-index: 1;
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  @include sm {
+    height: 95%;
+    transform: translatey(2px);
+    top: 2%;
+  }
+}
+.kindergarten-first-frame {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  svg {
+    width: 100%;
+    vertical-align: bottom;
+  }
+  @include md {
+    width: 100%;
+    height: 100%;
+    transform: translate(-1px, -1px);
+    svg {
+      width: 101%;
+      height: 101%;
+    }
+  }
+  @include sm {
+    width: 100%;
+    height: auto;
+    transform: translate(-1px, 0px);
+    svg {
+      width: 101%;
+      height: 101%;
+    }
+  }
+}
+.kindergarten-first-stroke {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  svg {
+    width: 100%;
+  }
+}
+
+@keyframes offsetKindergarten {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.kindergarten-first-line {
+  stroke-dasharray: 2305;
+  stroke-dashoffset: 2305;
+  animation: offsetKindergarten 3.5s linear forwards;
+}
+
+.kindergarten-second-fluid {
+  width: 100%;
+  padding: 0 30px;
+  margin: 160px 0;
+  @include md {
+    padding: 0 80px;
+  }
+  @include md {
+    margin: 100px 0;
+    padding: 0 20px;
+  }
+}
+.kindergarten-second-centered {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+}
+.kindergarten-second-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.613%;
+  @include md {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  @include sm {
+    gap: 8px;
+  }
+}
+.kindergarten-second-item {
+  width: 23.79%;
+  margin-bottom: 1.613%;
+  height: 355px;
+  padding: 35px 19px;
+  background: #dcf9f0;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  @include md {
+    width: auto;
+  }
+  @include sm {
+    height: auto;
+    padding: 25px 25px 39px;
+  }
+}
+.kindergarten-second-item-icon {
+  margin-bottom: 40px;
+  img {
+    width: 111px;
+  }
+  @include sm {
+    margin-bottom: 20px;
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
+.kindergarten-second-item-title {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 120%;
+  text-align: center;
+  color: #232323;
+  min-height: 94px;
+  @include sm {
+    min-height: 42px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
+.kindergarten-quotes-fluid {
+  width: 100%;
+  padding: 0 30px;
+  margin: 160px 0;
+  @include sm {
+    padding: 0 20px;
+    margin: 100px 0;
+  }
+}
+.kindergarten-quotes-centered {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+}
+.kindergarten-quotes-title {
+  font-family: 'Druk Wide Cyr';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  text-transform: uppercase;
+  color: #b6b6b6;
+  margin-bottom: 40px;
+  @include md {
+    text-align: center;
+  }
+  @include sm {
+    font-size: 16px;
+    line-height: 150%;
+  }
+}
+.kindergarten-quotes-description {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #232323;
+  margin-bottom: 80px;
+  @include sm {
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 40px;
+  }
+}
+.kindergarten-quotes-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  @include md {
+    display: flex;
+    flex-direction: column;
+  }
+  @include sm {
+  }
+}
+.kindergarten-quotes-item {
+  width: 391px;
+  height: 255px;
+  position: relative;
+  padding: 60px;
+  @include md {
+    margin-bottom: 60px;
+    &:nth-child(2n) {
+      margin-left: auto;
+    }
+  }
+  @include sm {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+.kindergarten-quotes-item-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+.kindergarten-quotes-item-text {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #232323;
+  position: relative;
+  z-index: 2;
+  @include sm {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+.kindergarten-approach-fluid {
+  width: 100%;
+  padding: 0 30px;
+  margin: 160px 0;
+  @include sm {
+    padding: 0 20px;
+    margin: 100px 0;
+  }
+}
+.kindergarten-approach-centered {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  @include md {
+    flex-direction: column;
+  }
+}
+.kindergarten-approach-left {
+  width: 25.4%;
+  @include md {
+    width: 100%;
+  }
+}
+.kindergarten-approach-left-title {
+  font-family: 'Druk Wide Cyr';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  text-transform: uppercase;
+  color: #b6b6b6;
+  margin-bottom: 80px;
+  @include md {
+    text-align: center;
+  }
+  @include sm {
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 40px;
+    padding: 0 30px;
+  }
+}
+.kindergarten-approach-description {
+  p {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #232323;
+    margin-bottom: 20px;
+  }
+  @include md {
+    margin-bottom: 60px;
+  }
+  @include sm {
+    p {
+      font-size: 12px;
+      line-height: 14px;
+      margin-bottom: 15px;
+    }
+  }
+}
+.kindergarten-approach-container {
+  width: 70.484%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  @include md {
+    width: 100%;
+    gap: 34px;
+  }
+  @include sm {
+    width: 84%;
+    margin: 0 auto;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+}
+.kindergarten-approach-item {
+  background: #fff7e1;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  cursor: pointer;
+  &:nth-child(2n) {
+    .kindergarten-approach-item-num {
+      background: #fbc01a;
+    }
+  }
+  &:nth-child(3n) {
+    .kindergarten-approach-item-num {
+      background: #fbc01a;
+    }
+  }
+  @include md {
+    padding-top: 16px;
+  }
+}
+
+.kindergarten-approach-item-inner {
+  width: 100%;
+  height: 359px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.kindergarten-approach-item-num {
+  flex-shrink: 0;
+  width: 100px;
+  height: 100px;
+  background: #ff5c00;
+  border-radius: 50%;
+  font-family: 'Druk Wide Cyr';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  margin-bottom: 50px;
+  transform: translateX(102%);
+  @include md {
+    margin-bottom: 38px;
+    font-size: 22px;
+    line-height: 27px;
+    width: 80px;
+    height: 80px;
+  }
+  @include sm {
+    transform: translateX(125%);
+  }
+}
+.kindergarten-approach-item-name {
+  font-family: 'Druk Wide Cyr';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #232323;
+  margin-bottom: 70px;
+  text-align: center;
+  min-height: 48px;
+  @include md {
+    margin-bottom: 65px;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 0 15px;
+  }
+}
+.kindergarten-approach-item-image {
+  width: 100%;
+  img {
+    width: 100%;
+    border-radius: 0px 0px 40px 40px;
+    vertical-align: bottom;
+  }
+}
+
+.kindergarten-how-fluid {
+  width: 100%;
+  padding: 0 30px;
+  margin: 160px 0;
+  @include md {
+    padding: 0;
+  }
+  @include sm {
+    margin: 100px 0;
+  }
+}
+.kindergarten-how-centered {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 80px 0;
+  @include md {
+    padding: 80px 30px 0;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  @include sm {
+    padding: 60px 30px 0;
+  }
+}
+.kindergarten-how-rectangle {
+  width: 120%;
+  height: 100%;
+  background: #dcf9f0;
+  border-radius: 30px 0px 0px 30px;
+  position: absolute;
+  left: 209px;
+  top: 0;
+  z-index: 1;
+  @include md {
+    left: 0;
+    border-radius: 0px;
+    height: 76%;
+  }
+  @include sm {
+    height: 85%;
+  }
+}
+.kindergarten-how-left {
+  width: 33.871%;
+  position: relative;
+  z-index: 2;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  @include md {
+    width: 422px;
+    height: 478px;
+  }
+  @include sm {
+    width: 98%;
+    height: 317px;
+  }
+}
+.kindergarten-how-right {
+  width: 61.6%;
+  position: relative;
+  z-index: 2;
+  p {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #232323;
+    margin-bottom: 35px;
+    strong {
+      font-weight: 700;
+    }
+    @include sm {
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+  @include md {
+    width: 100%;
+  }
+}
+.kindergarten-how-right-title {
+  font-family: 'Druk Wide Cyr';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  text-transform: uppercase;
+  color: #ff5c00;
+  margin-bottom: 80px;
+  @include md {
+    text-align: center;
+  }
+  @include sm {
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 40px;
+  }
+}
+.kindergarten-how-right-list {
+  padding-left: 75px;
+  li {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #232323;
+    margin-bottom: 35px;
+    position: relative;
+    strong {
+      font-weight: 700;
+    }
+    &::before {
+      content: '';
+      width: 35px;
+      height: 35px;
+      position: absolute;
+      top: 1px;
+      left: -65px;
+      background: url('../images/41.svg') center center no-repeat;
+    }
+  }
+  @include sm {
+    padding-left: 26px;
+    li {
+      font-size: 12px;
+      line-height: 14px;
+      &::before {
+        content: '';
+        width: 16px;
+        height: 16px;
+        top: 1px;
+        left: -26px;
+        background: url('../images/41.svg') center center no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+}
+
+.kindergarten-schedule-fluid {
+  width: 100%;
+  padding: 0 30px;
+  margin: 160px 0;
+  @include sm {
+    padding: 0 20px;
+    margin: 100px 0 140px;
+  }
+}
+.kindergarten-schedule-centered {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+}
+.kindergarten-schedule-title {
+  font-family: 'Druk Wide Cyr';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  text-transform: uppercase;
+  color: #b6b6b6;
+  margin-bottom: 80px;
+  @include md {
+    text-align: center;
+  }
+  @include sm {
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 39px;
+  }
+}
+.kindergarten-schedule-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  @include md {
+    flex-direction: column;
+  }
+}
+.kindergarten-schedule-left {
+  width: 100%;
+  columns: 2;
+  column-gap: 170px;
+  @include md {
+    columns: 1;
+    column-gap: 0;
+  }
+  @include sm {
+    width: 100%;
+  }
+}
+.kindergarten-schedule-left-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  @include sm {
+    margin-bottom: 15px;
+  }
+}
+.kindergarten-schedule-left-item-time {
+  margin-right: 28px;
+  width: 46px;
+  @include sm {
+    margin-right: 20px;
+    width: 35px;
+  }
+}
+.kindergarten-schedule-left-item-time-start {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ff5c00;
+  margin-bottom: 2px;
+}
+.kindergarten-schedule-left-item-time-end {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ff5c00;
+}
+.kindergarten-schedule-left-item-text {
+  display: inline-block;
+  background: #ffe1d0;
+  border-radius: 10px;
+  padding: 15px 20px;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ff5c00;
+}
+.kindergarten-schedule-right {
+  width: 50.806%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  @include md {
+    width: 100%;
+  }
+}
+.kindergarten-schedule-right-img1 {
+  width: 100%;
+  height: 409px;
+  margin-bottom: 62px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px 0px 0px 30px;
+  }
+  @include md {
+    margin-bottom: 30px;
+  }
+  @include sm {
+    height: 170px;
+    margin-bottom: 15px;
+    img {
+      border-radius: 20px;
+    }
+  }
+}
+.kindergarten-schedule-right-img2 {
+  width: 276px;
+  height: 404px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+  }
+  @include md {
+    width: 48%;
+  }
+  @include sm {
+    height: 160px;
+  }
+}
+.kindergarten-schedule-right-img3 {
+  width: 326px;
+  height: 404px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px 0px 0px 30px;
+  }
+  @include md {
+    width: 48%;
+  }
+  @include sm {
+    height: 160px;
+    img {
+      border-radius: 20px;
+    }
+  }
+}
+
+.kindergarten-integrated-fluid {
+  width: 100%;
+  background: #dcf9f0;
+  padding: 0 30px;
+  margin: 180px 0 0;
+  @include sm {
+    padding: 0 20px;
+    margin: 100px 0 0;
+  }
+}
+.kindergarten-integrated-centered {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 80px;
+  margin-bottom: 160px;
+  @include md {
+    margin-bottom: 100px;
+  }
+  @include sm {
+    margin-bottom: 80px;
+    padding-bottom: 40px;
+  }
+}
+.kindergarten-integrated-title {
+  background: #24e2ab;
+  border-radius: 0px 30px 30px 0px;
+  font-family: 'Druk Wide Cyr';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0;
+  width: 697px;
+  display: flex;
+  align-items: center;
+  padding: 48px;
+  border-radius: 0px 30px 30px 0px;
+  transform: translatey(-60px);
+  @include md {
+    transform: translate(-30px, -60px);
+  }
+  @include sm {
+    height: 85px;
+    width: 100%;
+    transform: translate(-20px, -40px);
+    font-size: 16px;
+    line-height: 150%;
+    padding: 13px 10px 20px;
+    border-radius: 0px 20px 20px 0px;
+  }
+}
+.kindergarten-integrated-text {
+  max-width: 1050px;
+  width: 100%;
+  padding-left: 50px;
+  border-left: 5px solid #24e2ab;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #232323;
+  @include md {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  @include sm {
+    padding-left: 20px;
+    border-left: 2px solid #24e2ab;
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+.kindergarten-integrated-icon {
+  position: absolute;
+  right: 0;
+  bottom: 50px;
+  @include md {
+    display: none;
+  }
+}
+
+.kindergarten-gray-wrapper {
+  background: #f5f5f5;
+  padding-top: 160px;
+  @include sm {
+    padding-top: 100px;
+  }
+}
+
+.kindergarten-virtual-fluid {
+  width: 100%;
+  padding: 0 30px;
+  margin: 0 0 160px 0;
+  @include sm {
+    padding: 0;
+    margin: 0 0 100px 0;
+  }
+}
+.kindergarten-virtual-centered {
+  max-width: 1240px;
+  height: 438px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.kindergarten-virtual-content {
+  max-width: 450px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @include sm {
+    width: 81%;
+  }
+}
+.kindergarten-virtual-image-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.kindergarten-virtual-tag {
+  font-family: 'Druk Wide Cyr';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  opacity: 0.6;
+  margin-bottom: 30px;
+  @include sm {
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 40px;
+  }
+}
+.kindergarten-virtual-title {
+  font-family: 'Druk Wide Cyr';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 49px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 34px;
+  position: relative;
+  z-index: 2;
+  @include sm {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 60px;
+  }
+}
+.kindergarten-virtual-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 92%;
+  height: 50px;
+  position: relative;
+  span {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #ffffff;
+    position: relative;
+    z-index: 2;
+  }
+  @include sm {
+    height: 39px;
+    span {
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
+}
+.kindergarten-virtual-walk-button-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ff5c00;
+  border-radius: 8px;
+  transform: skew(-25deg);
+}
+
+.kindergarten-desktop-slider-fluid {
+  width: 100%;
+  padding: 0 30px;
+  margin: 160px 0 0;
+  @include sm {
+    padding: 0 0px;
+    margin: 100px 0 0;
+  }
+}
+.kindergarten-desktop-slider-wrapper {
+  max-width: 1172px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.kindergarten-desktop-slider-mobile-title {
+  display: none;
+  @include md {
+    display: block;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    width: 617px;
+    height: 130px;
+    background: #ff5c00;
+    border-radius: 0px 30px 30px 0px;
+    font-family: 'Druk Wide Cyr';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 36px;
+  }
+  @include sm {
+    width: 90%;
+    height: 85px;
+    border-radius: 0px 15px 15px 0px;
+    font-size: 16px;
+    line-height: 150%;
+    padding: 20px;
+  }
+}
+.kindergarten-desktop-slider-arrows {
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  right: 0px;
+  top: 28%;
+  z-index: 10;
+  @include sm {
+    top: 42%;
+  }
+
+  .slick-prev {
+    position: absolute;
+    top: 0;
+    left: -33px;
+    width: 65px;
+    height: 65px;
+    &::before {
+      display: none;
+    }
+    &:hover {
+      svg {
+        circle {
+          fill: #665194;
+        }
+      }
+    }
+    @include md {
+      left: -15px;
+    }
+    @include sm {
+      width: 32px;
+      height: 32px;
+      left: 8px;
+      svg {
+        width: 100%;
+      }
+    }
+  }
+
+  .slick-next {
+    position: absolute;
+    top: 0;
+    right: -33px;
+    width: 65px;
+    height: 65px;
+
+    &::before {
+      display: none;
+    }
+    @include md {
+      right: -15px;
+    }
+    @include sm {
+      width: 32px;
+      height: 32px;
+      right: 8px;
+      svg {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.kindergarten-desktop-slider {
+  .slick-slide {
+    margin: 0 10px;
+  }
+  @include sm {
+    .slick-slide {
+      margin: 0 20px;
+    }
+  }
+}
+.kindergarten-desktop-slider-item {
+}
+.kindergarten-desktop-slider-item-inner {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.kindergarten-desktop-slider-item-left {
+  width: 44.795%;
+  @include md {
+    width: 100%;
+  }
+}
+.kindergarten-desktop-slider-item-left-name {
+  width: 100%;
+  height: 130px;
+  font-family: 'Druk Wide Cyr';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  border-radius: 0px 30px 30px 0px;
+  text-transform: uppercase;
+  padding: 35px;
+  color: #ffffff;
+  background: #ff5c00;
+  margin-bottom: 36px;
+  display: flex;
+  align-items: center;
+  @include md {
+    display: none;
+  }
+}
+.kindergarten-desktop-slider-item-left-img {
+  width: 100%;
+  height: 589px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+  }
+  @include sm {
+    height: 240px;
+  }
+}
+.kindergarten-desktop-slider-item-right {
+  width: 52.133%;
+  @include md {
+    display: none;
+  }
+}
+.kindergarten-desktop-slider-item-right-img1 {
+  width: 100%;
+  height: 360px;
+  margin-bottom: 36px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+  }
+}
+.kindergarten-desktop-slider-item-right-img2 {
+  width: 100%;
+  height: 359px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+  }
+}
+
+.kindergarten-approach-slider {
+  @include sm {
+    .slick-slide {
+      margin: 0 10px;
+    }
+    .kindergarten-approach-item {
+    }
+    .kindergarten-approach-item-inner {
+      height: 397px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+
+  .slick-dots {
+    width: 100%;
+    padding: 0 30px;
+    bottom: -55px;
+    li {
+      width: 10px;
+      button:before {
+        content: '';
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #ffe1d0;
+        opacity: 1;
+      }
+
+      &.slick-active {
+        button:before {
+          background: #ff5c00;
+        }
+      }
+    }
+    @include sm {
+      bottom: -47px;
+    }
+  }
+}
+
+.kindergarten-schedule-more {
+  margin: 40px auto 0 auto;
+  width: 88px;
+  height: 88px;
+  position: relative;
+  cursor: pointer;
+}
+.kindergarten-schedule-more-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: 3s linear more-bg-anim infinite;
+  border: 1px solid #ff5c00;
+  border-radius: 50%;
+  &::before {
+    content: '';
+    width: 22px;
+    height: 22px;
+    background: #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+.kindergarten-schedule-more-btn {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ff5c00;
+}
+
+.kindergarten-branches-fluid {
+  width: 100%;
+  background: #f5f5f5;
+  padding: 80px 30px;
+}
+.kindergarten-branches-centered {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+}
+.kindergarten-branches-title {
+  font-family: 'Druk Wide Cyr';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  text-transform: uppercase;
+  color: #24e2ab;
+  margin-bottom: 80px;
+}
+.kindergarten-branches-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  @include md {
+    display: unset;
+    .slick-slide {
+      margin: 0 5px;
+    }
+  }
+  .slick-dots {
+    width: 83vw;
+    padding: 0;
+    bottom: -55px;
+    display: flex;
+    justify-content: center;
+    li {
+      width: 10px;
+      button:before {
+        content: '';
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #ffe1d0;
+        opacity: 1;
+      }
+
+      &.slick-active {
+        button:before {
+          background: #ff5c00;
+        }
+      }
+    }
+    @include sm {
+      bottom: -47px;
+    }
+  }
+}
+
+.kindergarten-branches-item {
+}
+.kindergarten-branches-item-inner {
+  width: 100%;
+  border-radius: 20px;
+  position: relative;
+  background: #fff;
+  @include sm {
+  }
+}
+.kindergarten-branches-item-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  position: relative;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+}
+.kindergarten-branches-item-tag {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  border-radius: 30px;
+  background: #ff5c00;
+  padding: 5px 15px;
+  color: #fff;
+  text-align: center;
+  font-family: Gilroy;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  &.white {
+    background: #fff;
+    color: #ff5c00;
+  }
+}
+.kindergarten-branches-item-plane {
+  padding: 24px 20px 16px;
+  @include sm {
+    width: 95%;
+    border-radius: 0 80px 0 20px;
+  }
+}
+.kindergarten-branches-item-plane-name {
+  height: 50px;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  color: #ff5c00;
+  margin-bottom: 10px;
+  @include sm {
+    font-size: 18px;
+  }
+}
+.kindergarten-branches-item-plane-map {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  span {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #232323;
+    display: block;
+    margin-left: 5px;
+    @include sm {
+      font-size: 15px;
+    }
+  }
+}

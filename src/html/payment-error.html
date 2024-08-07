@@ -1,0 +1,43 @@
+{% set body_class = "thanks-page payment-error-page" %}
+{% extends "./_layout.html" %}
+
+{% block content %}
+<main class="thanks-main">
+  {% include './components/_header.html' %}
+
+  <div class="thanks-fluid">
+    <div class="thanks-centered">
+      <div class="thanks-image">
+        <img src="/images/icon88.svg" alt="img">
+      </div>
+      <div class="payment-error-title">Щось пішло не так</div>
+      <div class="thanks-description">Спробуйте знову</div>
+      <a href="/" class="club-popup-btn-link">
+        <div class="club-popup-btn-link-bg"></div>
+        <span>Оплатити</span>
+      </a>
+      <div class="club-popup-bottom-logos">
+        <div class="club-popup-bottom-logos-img">
+          <img src="/images/81.png" alt="i">
+        </div>
+        <div class="club-popup-bottom-logos-img">
+          <img src="/images/82.png" alt="i">
+        </div>
+        <div class="club-popup-bottom-logos-img">
+          <img src="/images/83.png" alt="i">
+        </div>
+        <div class="club-popup-bottom-logos-img">
+          <img src="/images/84.png" alt="i">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% include './components/_footer.html' %}
+</main>
+
+{% endblock %}
+
+{% block footer_scripts %}
+
+{% endblock %}

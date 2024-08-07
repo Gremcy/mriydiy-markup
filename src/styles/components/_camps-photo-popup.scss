@@ -1,0 +1,80 @@
+.camps-photo-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 1030px;
+  width: 100%;
+  max-height: 90vh;
+  padding: 80px 105px 100px;
+  background: #fff;
+  border-radius: 30px;
+  z-index: 5;
+  overflow-y: auto;
+  @include md {
+    width: 96%;
+    padding: 100px 50px;
+  }
+  @include sm {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: translate(0%, 0%);
+    padding: 80px 10px 60px;
+    width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+  }
+}
+.camps-photo-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  cursor: pointer;
+}
+
+.camps-photo-slider {
+  width: 100%;
+  .slick-slide {
+    margin: 0 10px;
+  }
+  .slick-dots {
+    width: 100%;
+    padding: 0 40px;
+    bottom: -40px;
+    li {
+      width: 10px;
+      margin: 0 8px;
+      button:before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #ffe1d0;
+        opacity: 1;
+      }
+      &::after {
+        display: none;
+      }
+
+      &.slick-active {
+        button:before {
+          background: #ff5c00;
+        }
+      }
+    }
+  }
+}
+.camps-photo-slider-item {
+  img {
+    width: 100%;
+    height: 411px;
+    object-fit: cover;
+    @include sm {
+      height: 274px;
+    }
+  }
+}

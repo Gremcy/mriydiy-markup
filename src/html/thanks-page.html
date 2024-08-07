@@ -1,0 +1,42 @@
+{% set body_class = "thanks-page" %}
+{% extends "./_layout.html" %}
+
+{% block content %}
+<main class="thanks-main">
+  {% include './components/_header.html' %}
+
+  <div class="thanks-fluid">
+    <div class="thanks-centered">
+      <div class="thanks-image">
+        <img src="/images/icon18.svg" alt="img">
+      </div>
+      <div class="thanks-title">Дякуємо,
+        ми отримали вашу заявку.</div>
+      <div class="thanks-description">Наш менеджер звʼяжеться з вами найближчим часом</div>
+      <!-- <a href="/" class="thanks-pay-btn">
+          <div class="thanks-pay-btn-bg"></div>
+          <span>Оплатити</span>
+      </a> -->
+      <a href="/" class="thanks-download" download>
+        <div class="thanks-download-btn">
+          <div class="hanks-download-btn-bg">
+          </div>
+          <div class="thanks-download-btn-icon">
+            <img src="/images/icon20.svg" alt="img">
+          </div>
+        </div>
+      </a>
+      <div class="thanks-text-download">
+        Завантажити презентацію про школу
+      </div>
+    </div>
+  </div>
+
+  {% include './components/_footer.html' %}
+</main>
+
+{% endblock %}
+
+{% block footer_scripts %}
+
+{% endblock %}

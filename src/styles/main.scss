@@ -1,0 +1,135 @@
+@import 'components/_reset';
+@import 'components/_fonts';
+@import 'components/_mixins';
+@import 'components/_helpers';
+
+@import 'components/_index';
+@import 'components/_modal';
+@import 'components/_menu';
+@import 'components/_header';
+@import 'components/_footer';
+@import 'components/_thanks-page';
+@import 'components/_online-school';
+@import 'components/_news';
+@import 'components/_kindergarten';
+@import 'components/_team';
+@import 'components/_team-popups';
+@import 'components/_externat';
+@import 'components/_contacts';
+@import 'components/_faq';
+@import 'components/_documents';
+@import 'components/_camps';
+@import 'components/_club-popup';
+@import 'components/_one-news';
+@import 'components/_camp';
+@import 'components/_camp-program-popup';
+@import 'components/_camps-photo-popup';
+@import 'components/_conception-popup';
+@import 'components/_error';
+@import 'components/_vacancies';
+@import 'components/_respond-vacancy-popup';
+@import 'components/_breadcrumbs';
+@import 'components/_send-review-popup';
+
+html,
+body {
+  font-family: 'Gilroy';
+  font-weight: 400;
+  overflow-x: hidden;
+  &.is-hidden {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.cookie-consent-banner {
+  width: calc(100% - 60px);
+  position: fixed;
+  bottom: 0;
+  left: 30px;
+  z-index: 1000;
+  border-radius: 20px;
+  background: var(--mango, #fbc01a);
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 150px 20px 40px;
+  @include md {
+    padding: 40px;
+    flex-direction: column;
+  }
+  @include sm {
+    padding: 45px 10px 20px;
+    width: calc(100% - 40px);
+    left: 20px;
+  }
+}
+.cookie-consent-banner-left {
+  width: 60%;
+  color: var(--text, #232323);
+  font-family: Gilroy;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  a {
+    margin-top: 5px;
+    color: var(--text, #232323);
+    font-family: Gilroy;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.4px;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    display: block;
+  }
+  @include md {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  @include sm {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+}
+.cookie-consent-banner-button {
+  border-radius: 10px;
+  background: var(--white, #fff);
+  color: #000;
+  text-align: center;
+  font-family: Gilroy;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  padding: 12px 60px;
+  cursor: pointer;
+  border: none;
+  @include md {
+    width: 100%;
+  }
+}
+
+.cookie-consent-banner-close-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}

@@ -1,0 +1,671 @@
+.vacancies-main {
+  width: 100%;
+  @include sm {
+    .online-faq-more {
+      display: none;
+    }
+  }
+}
+.vacancies-hero {
+  width: 100%;
+  padding: 100px 30px 0;
+  margin-bottom: 160px;
+  @include md {
+    padding: 280px 40px 0 40px;
+  }
+  @include sm {
+    padding: 80px 20px 0;
+  }
+}
+.vacancies-hero-centered {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include sm {
+    flex-direction: column-reverse;
+  }
+}
+.vacancies-hero-left {
+  width: 48%;
+  @include sm {
+    width: 100%;
+  }
+}
+.vacancies-hero-title {
+  p {
+    color: #ff5c00;
+    font-family: 'Druk Wide Cyr';
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 20px;
+  }
+  span {
+    color: #232323;
+    font-family: Gilroy;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.08px;
+    text-transform: uppercase;
+    margin-bottom: 26px;
+    display: block;
+  }
+  @include md {
+    p {
+      color: var(--, #ff5c00);
+      font-family: 'Druk Wide Cyr';
+      font-size: 52px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      margin-bottom: 9px;
+    }
+    span {
+      color: var(--text, #232323);
+      font-family: Gilroy;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: 1.08px;
+      text-transform: uppercase;
+      margin-bottom: 40px;
+    }
+  }
+  @include sm {
+    text-align: center;
+    p {
+      font-size: 36px;
+    }
+    span {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+  }
+}
+.vacancies-hero-description {
+  color: var(--text, #232323);
+  font-family: Gilroy;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 60px;
+  @include md {
+    font-size: 18px;
+    max-width: 268px;
+  }
+  @include sm {
+    font-size: 12px;
+    text-align: center;
+    max-width: 100%;
+    padding: 0 16px;
+    margin-bottom: 40px;
+  }
+}
+.vacancies-hero-right {
+  width: 48%;
+  @include md {
+    width: 52%;
+  }
+  @include sm {
+    width: 280px;
+    margin-bottom: 40px;
+  }
+}
+.vacancies-hero-right-image {
+  width: 100%;
+  img {
+    width: 100%;
+  }
+}
+
+.vacancies-second {
+  width: 100%;
+  margin-bottom: 160px;
+  @include md {
+    margin-bottom: 360px;
+  }
+  @include sm {
+    margin-bottom: 234px;
+  }
+}
+.vacancies-second-content {
+  position: relative;
+  width: 72.569444vw; /* 1045/1440 */
+  padding: 80px 100px 100px 210px;
+  border-radius: 30px 0px 0px 30px;
+  background: var(--light, #ffe1d0);
+  margin-left: auto;
+  @include md {
+    width: 100%;
+    padding: 80px 30px 0;
+    border-radius: 0;
+    height: 680px;
+  }
+  @include sm {
+    height: 520px;
+  }
+}
+.vacancies-second-title {
+  color: #ff5c00;
+  font-family: 'Druk Wide Cyr';
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 42px;
+  @include md {
+    text-align: center;
+  }
+  @include sm {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+}
+.vacancies-second-text {
+  color: var(--text, #232323);
+  font-family: Gilroy;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  @include md {
+    font-size: 18px;
+    margin-bottom: 80px;
+  }
+  @include sm {
+    font-size: 12px;
+    margin-bottom: 40px;
+  }
+}
+.vacancies-second-image {
+  width: 420px;
+  aspect-ratio: 1/1;
+  position: absolute;
+  top: 80px;
+  left: -295px;
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+  @include md {
+    position: unset;
+    margin: 0 auto;
+  }
+  @include sm {
+    width: 260px;
+  }
+}
+
+.vacancies-offer {
+  width: 100%;
+  margin-bottom: 150px;
+  padding: 0 30px;
+  @include sm {
+    padding: 0 20px;
+    margin-bottom: 100px;
+  }
+}
+.vacancies-offer-centered {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+}
+.vacancies-offer-title {
+  color: #b6b6b6;
+  font-family: 'Druk Wide Cyr';
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 80px;
+  @include md {
+    text-align: center;
+  }
+  @include sm {
+    font-size: 16px;
+    margin-bottom: 45px;
+  }
+}
+.vacancies-offer-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  @include md {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 21px;
+  }
+  @include sm {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 35px;
+  }
+}
+.vacancies-offer-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.vacancies-offer-item-icon {
+  width: 65px;
+  flex-shrink: 0;
+  img {
+    width: 100%;
+  }
+  @include sm {
+    width: 50px;
+  }
+}
+.vacancies-offer-item-text {
+  color: var(--text, #232323);
+  font-family: Gilroy;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  @include sm {
+    font-size: 16px;
+  }
+}
+
+.vacancies-youtube {
+  width: 100%;
+  padding: 0 30px;
+  margin-bottom: 160px;
+  @include sm {
+    margin-bottom: 100px;
+  }
+}
+.vacancies-youtube-centered {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+}
+.vacancies-youtube-video {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  iframe {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    z-index: 2;
+    position: relative;
+  }
+}
+
+.vacancies-hire {
+  width: 100%;
+  padding: 0 30px;
+  margin-bottom: 225px;
+  @include sm {
+    padding: 0 20px;
+  }
+}
+.vacancies-hire-centered {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+}
+.vacancies-hire-title {
+  color: #b6b6b6;
+  font-family: 'Druk Wide Cyr';
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 80px;
+  @include md {
+    text-align: center;
+  }
+  @include sm {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+}
+.vacancies-hire-slider {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  @include md {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include sm {
+    display: unset;
+    .slick-dots {
+      width: 100%;
+      padding: 0 90px;
+      bottom: -36px;
+      li {
+        width: 10px;
+        margin: 0 10px;
+        button:before {
+          content: '';
+          width: 10px;
+          height: 10px;
+          border-radius: 20px;
+          background: #ffe1d0;
+          opacity: 1;
+        }
+
+        &.slick-active {
+          button:before {
+            background: #ff5c00;
+          }
+        }
+      }
+    }
+  }
+}
+.vacancies-hire-slider-item {
+  border-radius: 20px;
+  background: #fff7e1;
+  padding: 40px;
+  @include sm {
+    padding: 20px 35px;
+  }
+}
+.vacancies-hire-slider-item-name {
+  color: #ff5c00;
+  font-family: 'Druk Wide Cyr';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  @include sm {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+}
+.vacancies-hire-slider-item-address {
+  color: var(--text, #232323);
+  font-family: Gilroy;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 45px;
+  @include sm {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+}
+.vacancies-hire-slider-item-duti {
+  color: var(--text, #232323);
+  font-family: Gilroy;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  @include sm {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+}
+.vacancies-hire-slider-item-list {
+  margin-left: 25px;
+  li {
+    list-style: disc;
+    color: var(--text, #232323);
+    font-family: Gilroy;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 20px;
+  }
+  @include sm {
+    li {
+      font-size: 16px;
+    }
+  }
+}
+.vacancies-hire-slider-item-btn {
+  cursor: pointer;
+  padding: 14px;
+  border-radius: 10px;
+  background: #ff5c00;
+  color: #fff;
+  text-align: center;
+  font-family: Gilroy;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include sm {
+    font-size: 14px;
+  }
+}
+
+.vacancies-send {
+  background: #daf9ff;
+  margin-bottom: 160px;
+  padding-bottom: 80px;
+  @include sm {
+    margin-bottom: 100px;
+    padding-bottom: 60px;
+  }
+}
+.vacancies-send-centered {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.vacancies-send-title {
+  width: fit-content;
+  color: #fff;
+  font-family: 'Druk Wide Cyr';
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  padding: 48px 160px 48px 48px;
+  border-radius: 0px 30px 30px 0px;
+  background: #0cc4e9;
+  transform: translateY(-50%);
+  @include md {
+    width: 637px;
+    padding: 30px;
+    font-size: 28px;
+  }
+  @include sm {
+    width: 94%;
+    font-size: 16px;
+  }
+}
+.vacancies-send-icon {
+  position: absolute;
+  top: -50px;
+  right: 0;
+  @include md {
+    top: 106px;
+    right: 78px;
+  }
+  @include sm {
+    display: none;
+  }
+}
+.vacancies-send-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include md {
+    width: 495px;
+    padding-left: 30px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  @include sm {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+.vacancies-send-input {
+  width: 29%;
+  position: relative;
+  input {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background: #fff;
+    padding: 0 20px;
+    color: #000;
+    font-family: Gilroy;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    &::placeholder {
+      color: #b6b6b6;
+    }
+  }
+  @include md {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .error-text {
+    position: absolute;
+    bottom: -24px;
+    right: 0;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #e61777;
+    display: none;
+  }
+  &.error {
+    input {
+      border: 1px solid #e61777;
+    }
+    .error-text {
+      display: block;
+    }
+  }
+}
+
+.input-file {
+  width: 29%;
+  height: 50px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: 2px solid #ff5c00;
+  background: #fff;
+  padding: 0 20px;
+  @include md {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
+.input-file span {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  color: #ff5c00;
+  font-family: Gilroy;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  text-transform: uppercase;
+  vertical-align: middle;
+  box-sizing: border-box;
+  border: none;
+  margin: 0;
+  transition: all 0.2s ease-in;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  &:hover {
+    // color: #dd2c17;
+  }
+  @include sm {
+    font-size: 16px;
+  }
+}
+.input-file input[type='file'] {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  display: block;
+  width: 0;
+  height: 0;
+}
+
+/* Focus */
+.input-file input[type='file']:focus + span {
+  // box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Hover/active */
+.input-file:hover span {
+  // background-color: #59be6e;
+}
+.input-file:active span {
+  // background-color: #2e703a;
+}
+
+/* Disabled */
+.input-file input[type='file']:disabled + span {
+  // background-color: #eee;
+}
+
+.vacancies-send-submit-btn {
+  border: none;
+  width: 29%;
+  height: 50px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: #ff5c00;
+  color: #fff;
+  font-family: Gilroy;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  cursor: pointer;
+  @include md {
+    width: 100%;
+  }
+  @include sm {
+    font-size: 14px;
+  }
+}

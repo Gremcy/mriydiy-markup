@@ -1,0 +1,932 @@
+{% set body_class = "home-page" %} {% extends "./_layout.html" %} {% block
+content %}
+<main class="home-main">
+  {% include './components/_header.html' %}
+
+  <div class="home-first-fluid">
+    <div class="home-first-centered">
+      <div class="home-first-left">
+        <!-- <a href="#about">test</a> -->
+        <div class="home-first-left-title">MRIYDIY</div>
+        <div class="home-first-left-heading">ті, що творять світ</div>
+        <div class="home-first-left-description">
+          Вступна кампанія на 2022-2023 н.р. *Про наявність місць у класах
+          зорієнтує менеджер.
+        </div>
+        <div class="home-first-left-btn">
+          <div
+            class="home-first-left-btn-bg js-modal-link"
+            data-target="entry-popup"
+          ></div>
+          <span>записатися</span>
+        </div>
+      </div>
+      <div class="home-first-right">
+        <div class="home-first-anim-img img7">
+          <img src="/images/7.png" alt="img" />
+        </div>
+        <div class="home-first-anim-img img6">
+          <img src="/images/6.png" alt="img" />
+        </div>
+        <div class="home-first-anim-img img5">
+          <img src="/images/5.png" alt="img" />
+        </div>
+        <div class="home-first-anim-img img4">
+          <img src="/images/4.png" alt="img" />
+        </div>
+        <div class="home-first-anim-img img3">
+          <img src="/images/3.png" alt="img" />
+        </div>
+        <div class="home-first-anim-img img2">
+          <img src="/images/2.png" alt="img" />
+        </div>
+        <div class="home-first-anim-img img1">
+          <img src="/images/1.png" alt="img" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="home-second-fluid">
+    <div class="home-second-centered">
+      <div class="home-second-item">
+        <div class="home-second-item-heading">500+ students</div>
+        <div class="home-second-item-text1">дітей 0 - 11 клас</div>
+      </div>
+      <div class="home-second-item">
+        <div class="home-second-item-heading">ЛІЦЕНЗІЯ</div>
+        <div class="home-second-item-text1">>100 професійних працівників</div>
+      </div>
+      <div class="home-second-item">
+        <div class="home-second-item-heading">20%</div>
+        <div class="home-second-item-text1">
+          навчальних годин іноземною мовою
+        </div>
+      </div>
+      <div class="home-second-item">
+        <div class="home-second-item-heading">СТАТУС</div>
+        <div class="home-second-item-text1">
+          центру підготовки кембридзьких іспитів
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="home-knowledge-fluid" id="about">
+    <div class="home-knowledge-centered">
+      <div class="home-knowledge-title">
+        ЯК ШКІЛЬНІ ЗНАННЯ ВПЛИВАЮТЬ НА МРІЇ
+      </div>
+      <div class="home-knowledge-description">
+        Ми впевнені, що чим більше цікавого та практичного досвіду дитина
+        отримує у школі, тим ширший формує світогляд. А значить, тим масштабнішу
+        мрію може сформулювати та робити дієві кроки до її досягнення.
+      </div>
+      <div class="home-knowledge-container">
+        <div
+          class="home-knowledge-item js-modal-link"
+          data-target="knowledge-popup"
+        >
+          <div class="home-knowledge-item-icon">
+            <img src="/images/icon1.svg" alt="img" />
+          </div>
+          <div class="home-knowledge-item-name">АКЦЕНТ НА НАУКАХ</div>
+          <div class="home-knowledge-item-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et pulvinar
+            leo placerat. Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. Et pulvinar leo placerat
+          </div>
+        </div>
+        <div
+          class="home-knowledge-item js-modal-link"
+          data-target="knowledge-popup"
+        >
+          <div class="home-knowledge-item-icon">
+            <img src="/images/icon2.svg" alt="img" />
+          </div>
+          <div class="home-knowledge-item-name">РОЗВИТОК КОМПЕТЕНЦІЙ</div>
+          <div class="home-knowledge-item-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et pulvinar
+            leo placerat. Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. Et pulvinar leo placerat
+          </div>
+        </div>
+        <div
+          class="home-knowledge-item js-modal-link"
+          data-target="knowledge-popup"
+        >
+          <div class="home-knowledge-item-icon">
+            <img src="/images/icon3.svg" alt="img" />
+          </div>
+          <div class="home-knowledge-item-name">ЦІННОСТНЕ СЕРЕДОВИЩЕ</div>
+          <div class="home-knowledge-item-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et pulvinar
+            leo placerat. Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. Et pulvinar leo placerat
+          </div>
+        </div>
+        <div
+          class="home-knowledge-item js-modal-link"
+          data-target="knowledge-popup"
+        >
+          <div class="home-knowledge-item-icon">
+            <img src="/images/icon4.svg" alt="img" />
+          </div>
+          <div class="home-knowledge-item-name">КРОКИ ДЛЯ ДОСЯГНЕННЯ МРІЙ</div>
+          <div class="home-knowledge-item-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et pulvinar
+            leo placerat. Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. Et pulvinar leo placerat
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% include './components/_home-videos-slider.html' %}
+
+  <div class="home-experience-fluid">
+    <div class="home-experience-centered">
+      <div class="home-experience-title">НАШ ДОСВІД НА ПРИКЛАДАХ</div>
+      <div class="home-experience-wrapper">
+        <div class="home-experience-slider-arrows">
+          <div class="slick-prev">
+            <svg
+              width="16"
+              height="28"
+              viewBox="0 0 16 28"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14 2L2 14L14 26"
+                stroke="#FF5C00"
+                stroke-width="4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div class="slick-next">
+            <svg
+              width="16"
+              height="28"
+              viewBox="0 0 16 28"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2 26L14 14L2 2"
+                stroke="#FF5C00"
+                stroke-width="4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="home-experience-slider">
+          <div class="home-experience-slider-item">
+            <div class="home-experience-slider-item-inner">
+              <div class="home-experience-slider-item-img">
+                <img src="/images/8.jpg" alt="img" />
+              </div>
+              <div class="home-experience-slider-item-down">
+                <div class="home-experience-slider-item-down-num">1</div>
+                <div class="home-experience-slider-item-down-text">
+                  <span>Senectus eget consectetur non ullamcorper</span>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="home-experience-slider-item">
+            <div class="home-experience-slider-item-inner">
+              <div class="home-experience-slider-item-img">
+                <img src="/images/9.jpg" alt="img" />
+              </div>
+              <div class="home-experience-slider-item-down">
+                <div class="home-experience-slider-item-down-num">2</div>
+                <div class="home-experience-slider-item-down-text">
+                  <span>Senectus eget consectetur non ullamcorper</span>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                    turpis varius curabitur sed tincidunt ut odio. Interdum
+                    augue nunc quisque massa ac. Viverra tellus nunc non tellus
+                    lectus eget massa. Urna, non sed dictumst nibh aliquam.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="home-experience-slider-item">
+            <div class="home-experience-slider-item-inner">
+              <div class="home-experience-slider-item-img">
+                <img src="/images/10.jpg" alt="img" />
+              </div>
+              <div class="home-experience-slider-item-down">
+                <div class="home-experience-slider-item-down-num">3</div>
+                <div class="home-experience-slider-item-down-text">
+                  <span>Senectus eget consectetur non ullamcorper</span>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="home-experience-slider-item">
+            <div class="home-experience-slider-item-inner">
+              <div class="home-experience-slider-item-img">
+                <img src="/images/11.jpg" alt="img" />
+              </div>
+              <div class="home-experience-slider-item-down">
+                <div class="home-experience-slider-item-down-num">4</div>
+                <div class="home-experience-slider-item-down-text">
+                  <span>Senectus eget consectetur non ullamcorper</span>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="home-experience-slider-item">
+            <div class="home-experience-slider-item-inner">
+              <div class="home-experience-slider-item-img">
+                <img src="/images/8.jpg" alt="img" />
+              </div>
+              <div class="home-experience-slider-item-down">
+                <div class="home-experience-slider-item-down-num">5</div>
+                <div class="home-experience-slider-item-down-text">
+                  <span>Senectus eget consectetur non ullamcorper</span>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="home-experience-slider-item">
+            <div class="home-experience-slider-item-inner">
+              <div class="home-experience-slider-item-img">
+                <img src="/images/9.jpg" alt="img" />
+              </div>
+              <div class="home-experience-slider-item-down">
+                <div class="home-experience-slider-item-down-num">6</div>
+                <div class="home-experience-slider-item-down-text">
+                  <span>Senectus eget consectetur non ullamcorper</span>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                    turpis varius curabitur sed tincidunt ut odio. Interdum
+                    augue nunc quisque massa ac. Viverra tellus nunc non tellus
+                    lectus eget massa. Urna, non sed dictumst nibh aliquam.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="home-experience-slider-item">
+            <div class="home-experience-slider-item-inner">
+              <div class="home-experience-slider-item-img">
+                <img src="/images/10.jpg" alt="img" />
+              </div>
+              <div class="home-experience-slider-item-down">
+                <div class="home-experience-slider-item-down-num">7</div>
+                <div class="home-experience-slider-item-down-text">
+                  <span>Senectus eget consectetur non ullamcorper</span>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="home-experience-slider-item">
+            <div class="home-experience-slider-item-inner">
+              <div class="home-experience-slider-item-img">
+                <img src="/images/10.jpg" alt="img" />
+              </div>
+              <div class="home-experience-slider-item-down">
+                <div class="home-experience-slider-item-down-num">8</div>
+                <div class="home-experience-slider-item-down-text">
+                  <span>Senectus eget consectetur non ullamcorper</span>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="home-experience-slider-item">
+            <div class="home-experience-slider-item-inner">
+              <div class="home-experience-slider-item-img">
+                <img src="/images/10.jpg" alt="img" />
+              </div>
+              <div class="home-experience-slider-item-down">
+                <div class="home-experience-slider-item-down-num">7</div>
+                <div class="home-experience-slider-item-down-text">
+                  <span>Senectus eget consectetur non ullamcorper</span>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="home-experience-slider-item">
+            <div class="home-experience-slider-item-inner">
+              <div class="home-experience-slider-item-img">
+                <img src="/images/10.jpg" alt="img" />
+              </div>
+              <div class="home-experience-slider-item-down">
+                <div class="home-experience-slider-item-down-num">8</div>
+                <div class="home-experience-slider-item-down-text">
+                  <span>Senectus eget consectetur non ullamcorper</span>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="home-calendar-fluid">
+    <div class="home-calendar-centered">
+      <div class="home-calendar-left">
+        <div class="home-calendar-left-title">ГРАФІК ПОДІЙ</div>
+        <div class="home-calendar-left-name">
+          19 серпня<br />
+          День відкритих дверей
+        </div>
+        <div class="home-calendar-left-address">
+          10:00 - 12:00 - вул. Угорська, 12 Є
+        </div>
+        <div class="home-calendar-button">
+          <div class="home-calendar-button-bg"></div>
+          <span> записатися </span>
+        </div>
+      </div>
+      <div class="home-calendar-right">
+        <input id="datetimepicker" type="text" />
+      </div>
+    </div>
+  </div>
+
+  {% include './components/_home-values.html' %}
+
+  <div class="home-methods-fluid">
+    <div class="home-methods-centered">
+      <div class="home-methods-title">унікальні методики</div>
+      <div class="home-methods-content">
+        <div class="home-methods-left">
+          <div class="tabs">
+            <div class="tabs__nav">
+              <div class="tabs__nav-btn" data-tab="#tab1">
+                <span>МРІЄБУДУВАННЯ</span>
+              </div>
+              <div class="tabs__nav-btn" data-tab="#tab2">
+                <span>ДІЄВИЙ ДОСВІД</span>
+              </div>
+              <div class="tabs__nav-btn" data-tab="#tab3">
+                <span>БЕЗПЕКА ТА ПІДТРИМКА</span>
+              </div>
+              <div class="tabs__nav-btn" data-tab="#tab4">
+                <span>ПРОЄКТНЕ НАВЧАННЯ</span>
+              </div>
+              <div class="tabs__nav-btn" data-tab="#tab5">
+                <span>МРІЄБУДУВАННЯ</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="home-methods-right tabs__content">
+          <div class="tabs__item" id="tab1">
+            <div class="home-methods-right-inner-title">МРІЄБУДУВАННЯ</div>
+            <div class="home-methods-right-inner-content">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa
+                nunc libero tellus, dignissim id condimentum cursus velit.
+                Pharetra pellentesque tellus mauris, in tortor. Leo nisi augue
+                leo quis convallis arcu massa bibendum cras. In facilisi morbi
+                odio quis. Aliquet aliquam ipsum commodo fermentum nunc, urna
+                risus tortor turpis. Fermentum eu vel felis ornare sit tincidunt
+                viverra neque interdum.
+              </p>
+              <img src="/images/12.jpg" alt="img" />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa
+                nunc libero tellus, dignissim id condimentum cursus velit.
+                Pharetra pellentesque tellus mauris, in tortor. Leo nisi augue
+                leo quis convallis arcu massa bibendum cras. In facilisi morbi
+                odio quis. Aliquet aliquam ipsum commodo fermentum nunc, urna
+                risus tortor turpis. Fermentum eu vel felis ornare sit tincidunt
+                viverra neque interdum.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa
+                nunc libero tellus, dignissim id condimentum cursus velit.
+                Pharetra pellentesque tellus mauris, in tortor. Leo nisi augue
+                leo quis convallis arcu massa bibendum cras. In facilisi morbi
+                odio quis. Aliquet aliquam ipsum commodo fermentum nunc, urna
+                risus tortor turpis. Fermentum eu vel felis ornare sit tincidunt
+                viverra neque interdum. Aliquet aliquam ipsum commodo fermentum
+                nunc, urna risus tortor turpis. Fermentum eu vel felis ornare
+                sit tincidunt viverra neque interdum.
+              </p>
+            </div>
+          </div>
+          <div class="tabs__item" id="tab2">
+            <div class="home-methods-right-inner-title">ДІЄВИЙ ДОСВІД</div>
+            <div class="home-methods-right-inner-content">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa
+                nunc libero tellus, dignissim id condimentum cursus velit.
+                Pharetra pellentesque tellus mauris, in tortor. Leo nisi augue
+                leo quis convallis arcu massa bibendum cras. In facilisi morbi
+                odio quis. Aliquet aliquam ipsum commodo fermentum nunc, urna
+                risus tortor turpis. Fermentum eu vel felis ornare sit tincidunt
+                viverra neque interdum.
+              </p>
+
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa
+                nunc libero tellus, dignissim id condimentum cursus velit.
+                Pharetra pellentesque tellus mauris, in tortor. Leo nisi augue
+                leo quis convallis arcu massa bibendum cras. In facilisi morbi
+                odio quis. Aliquet aliquam ipsum commodo fermentum nunc, urna
+                risus tortor turpis. Fermentum eu vel felis ornare sit tincidunt
+                viverra neque interdum.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa
+                nunc libero tellus, dignissim id condimentum cursus velit.
+                Pharetra pellentesque tellus mauris, in tortor. Leo nisi augue
+                leo qui
+              </p>
+              <img src="/images/12.jpg" alt="img" />
+            </div>
+          </div>
+          <div class="tabs__item" id="tab3">
+            <div class="home-methods-right-inner-title">
+              БЕЗПЕКА ТА ПІДТРИМКА
+            </div>
+            <div class="home-methods-right-inner-content">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa
+                nunc libero tellus, dignissim id condimentum cursus velit.
+                Pharetra pellentesque tellus mauris, in tortor. Leo nisi augue
+                leo quis convallis arcu massa bibendum cras. In facilisi morbi
+                odio quis. Aliquet aliquam ipsum commodo fermentum nunc, urna
+                risus tortor turpis. Fermentum eu vel felis ornare sit tincidunt
+                viverra neque interdum.
+              </p>
+              <img src="/images/12.jpg" alt="img" />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa
+                nunc libero tellus, dignissim id condimentum cursus velit.
+                Pharetra pellentesque tellus mauris, in tortor. Leo nisi augue
+                leo quis convallis arcu massa bibendum cras. In facilisi morbi
+                odio quis. Aliquet aliquam ipsum commodo fermentum nunc, urna
+                risus tortor turpis. Fermentum eu vel felis ornare sit tincidunt
+                viverra neque interdum.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa
+                nunc libero tellus, dignissim id condimentum cursus velit.
+                Pharetra pellentesque tellus mauris, in tortor. Leo nisi augue
+                leo quis convallis arcu massa bibendum cras. In facilisi morbi
+                odio quis. Aliquet aliquam ipsum commodo fermentum nunc, urna
+                risus tortor turpis. Fermentum eu vel felis ornare sit tincidunt
+                viverra neque interdum. Aliquet aliquam ipsum commodo fermentum
+                nunc, urna risus tortor turpis. Fermentum eu vel felis ornare
+                sit tincidunt viverra neque interdum.
+              </p>
+            </div>
+          </div>
+          <div class="tabs__item" id="tab4">
+            <div class="home-methods-right-inner-title">ПРОЄКТНЕ НАВЧАННЯ</div>
+            <div class="home-methods-right-inner-content">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa
+                nunc libero tellus, dignissim id condimentum cursus velit.
+                Pharetra pellentesque tellus mauris, in tortor. Leo nisi augue
+                leo quis convallis arcu massa bibendum cras. In facilisi morbi
+                odio quis. Aliquet aliquam ipsum commodo fermentum nunc, urna
+                risus tortor turpis. Fermentum eu vel felis ornare sit tincidunt
+                viverra neque interdum.
+              </p>
+              <img src="/images/12.jpg" alt="img" />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa
+                nunc libero tellus, dignissim id condimentum cursus velit.
+                Pharetra pellentesque tellus mauris, in tortor. Leo nisi augue
+                leo quis convallis arcu massa bibendum cras. In facilisi morbi
+                odio quis. Aliquet aliquam ipsum commodo fermentum nunc, urna
+                risus tortor turpis. Fermentum eu vel felis ornare sit tincidunt
+                viverra neque interdum.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa
+                nunc libero tellus, dignissim id condimentum cursus velit.
+                Pharetra pellentesque tellus mauris, in tortor. Leo nisi augue
+                leo quis convallis arcu massa bibendum cras. In facilisi morbi
+                odio quis. Aliquet aliquam ipsum commodo fermentum nunc, urna
+                risus tortor turpis. Fermentum eu vel felis ornare sit tincidunt
+                viverra neque interdum. Aliquet aliquam ipsum commodo fermentum
+                nunc, urna risus tortor turpis. Fermentum eu vel felis ornare
+                sit tincidunt viverra neque interdum.
+              </p>
+            </div>
+          </div>
+          <div class="tabs__item" id="tab5">
+            <div class="home-methods-right-inner-title">МРІЄБУДУВАННЯ</div>
+            <div class="home-methods-right-inner-content">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa
+                nunc libero tellus, dignissim id condimentum cursus velit.
+                Pharetra pellentesque tellus mauris, in tortor. Leo nisi augue
+                leo quis convallis arcu massa bibendum cras. In facilisi morbi
+                odio quis. Aliquet aliquam ipsum commodo fermentum nunc, urna
+                risus tortor turpis. Fermentum eu vel felis ornare sit tincidunt
+                viverra neque interdum.
+              </p>
+              <img src="/images/12.jpg" alt="img" />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa
+                nunc libero tellus, dignissim id condimentum cursus velit.
+                Pharetra pellentesque tellus mauris, in tortor. Leo nisi augue
+                leo quis convallis arcu massa bibendum cras. In facilisi morbi
+                odio quis. Aliquet aliquam ipsum commodo fermentum nunc, urna
+                risus tortor turpis. Fermentum eu vel felis ornare sit tincidunt
+                viverra neque interdum.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa
+                nunc libero tellus, dignissim id condimentum cursus velit.
+                Pharetra pellentesque tellus mauris, in tortor. Leo nisi augue
+                leo quis convallis arcu massa bibendum cras. In facilisi morbi
+                odio quis. Aliquet aliquam ipsum commodo fermentum nunc, urna
+                risus tortor turpis. Fermentum eu vel felis ornare sit tincidunt
+                viverra neque interdum. Aliquet aliquam ipsum commodo fermentum
+                nunc, urna risus tortor turpis. Fermentum eu vel felis ornare
+                sit tincidunt viverra neque interdum.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="online-reviews-fluid index">
+    <div class="online-reviews-centered">
+      <div class="online-reviews-top">
+        <div class="online-reviews-top-title">відгуки</div>
+        <div
+          class="online-reviews-top-btn js-modal-link"
+          data-target="send-review-popup"
+        >
+          Залишити відгук
+        </div>
+      </div>
+      <div class="online-reviews-slider-wrapper">
+        <div class="online-reviews-slider">
+          <div
+            class="online-reviews-item js-modal-link"
+            data-target="youtube-popup"
+          >
+            <div class="online-reviews-item-top">
+              <div class="online-reviews-item-image">
+                <img src="/images/94.png" alt="img" />
+              </div>
+              <div class="online-reviews-item-icon">
+                <img src="/images/youtube-icon.png" alt="img" />
+              </div>
+            </div>
+            <div class="online-reviews-item-center">
+              <div class="online-reviews-item-center-tag">Відгуки</div>
+              <div class="online-reviews-item-center-date">22/08/2022</div>
+            </div>
+            <div class="online-reviews-item-bottom">
+              <p>Іваненко Світлана,</p>
+              <p>мама донечки Єви, 6 рокіів</p>
+            </div>
+          </div>
+          <div
+            class="online-reviews-item js-modal-link"
+            data-target="youtube-popup"
+          >
+            <div class="online-reviews-item-top">
+              <div class="online-reviews-item-image">
+                <img src="/images/94.png" alt="img" />
+              </div>
+              <div class="online-reviews-item-icon">
+                <img src="/images/youtube-icon.png" alt="img" />
+              </div>
+            </div>
+            <div class="online-reviews-item-center">
+              <div class="online-reviews-item-center-tag">Відгуки</div>
+              <div class="online-reviews-item-center-date">22/08/2022</div>
+            </div>
+            <div class="online-reviews-item-bottom">
+              <p>Іваненко Світлана,</p>
+              <p>мама донечки Єви, 6 рокіів</p>
+            </div>
+          </div>
+          <div
+            class="online-reviews-item js-modal-link"
+            data-target="youtube-popup"
+          >
+            <div class="online-reviews-item-top">
+              <div class="online-reviews-item-image">
+                <img src="/images/94.png" alt="img" />
+              </div>
+              <div class="online-reviews-item-icon">
+                <img src="/images/youtube-icon.png" alt="img" />
+              </div>
+            </div>
+            <div class="online-reviews-item-center">
+              <div class="online-reviews-item-center-tag">Відгуки</div>
+              <div class="online-reviews-item-center-date">22/08/2022</div>
+            </div>
+            <div class="online-reviews-item-bottom">
+              <p>Іваненко Світлана,</p>
+              <p>мама донечки Єви, 6 рокіів</p>
+            </div>
+          </div>
+          <div
+            class="online-reviews-item js-modal-link"
+            data-target="youtube-popup"
+          >
+            <div class="online-reviews-item-top">
+              <div class="online-reviews-item-image">
+                <img src="/images/94.png" alt="img" />
+              </div>
+              <div class="online-reviews-item-icon">
+                <img src="/images/youtube-icon.png" alt="img" />
+              </div>
+            </div>
+            <div class="online-reviews-item-center">
+              <div class="online-reviews-item-center-tag">Відгуки</div>
+              <div class="online-reviews-item-center-date">22/08/2022</div>
+            </div>
+            <div class="online-reviews-item-bottom">
+              <p>Іваненко Світлана,</p>
+              <p>мама донечки Єви, 6 рокіів</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="home-text-rewievs-fluid">
+    <div class="home-text-rewievs-centered">
+      <div class="home-text-rewievs-slider">
+        <div class="home-text-rewievs-slider-item">
+          <div class="home-text-rewievs-slider-item-name">
+            ІВАНЕНКО СВІТЛАНА
+          </div>
+          <div class="home-text-rewievs-slider-item-post">
+            мама дочечки Єви, 6 років
+          </div>
+          <div class="home-text-rewievs-slider-item-message">
+            Диттині все дуже сплодобалось, наступного року хочемо повторити ще
+            Диттині все дуже сплодобалось, наступного року хочемо повторити
+            щеДиттині все дуже сплодобалось, наступного року хочемо повторити
+            ще, диттині все дуже сплодобалось, наступного року хочемо повторити
+            ще. Диттині все дуже сплодобалось, наступного року хочемо повторити
+            ще
+          </div>
+        </div>
+        <div class="home-text-rewievs-slider-item">
+          <div class="home-text-rewievs-slider-item-name">
+            ІВАНЕНКО СВІТЛАНА
+          </div>
+          <div class="home-text-rewievs-slider-item-post">
+            мама дочечки Єви, 6 років
+          </div>
+          <div class="home-text-rewievs-slider-item-message">
+            Диттині все дуже сплодобалось, наступного року хочемо повторити ще
+            Диттині все дуже сплодобалось, наступного року хочемо повторити
+            щеДиттині все дуже сплодобалось, наступного року хочемо повторити
+            ще, диттині все дуже сплодобалось, наступного року хочемо повторити
+            ще. Диттині все дуже сплодобалось, наступного року хочемо повторити
+            ще
+          </div>
+        </div>
+        <div class="home-text-rewievs-slider-item">
+          <div class="home-text-rewievs-slider-item-name">
+            ІВАНЕНКО СВІТЛАНА
+          </div>
+          <div class="home-text-rewievs-slider-item-post">
+            мама дочечки Єви, 6 років
+          </div>
+          <div class="home-text-rewievs-slider-item-message">
+            Диттині все дуже сплодобалось, наступного року хочемо повторити ще
+            Диттині все дуже сплодобалось, наступного року хочемо повторити
+            щеДиттині все дуже сплодобалось, наступного року хочемо повторити
+            ще, диттині все дуже сплодобалось, наступного року хочемо повторити
+            ще. Диттині все дуже сплодобалось, наступного року хочемо повторити
+            ще
+          </div>
+        </div>
+        <div class="home-text-rewievs-slider-item">
+          <div class="home-text-rewievs-slider-item-name">
+            ІВАНЕНКО СВІТЛАНА
+          </div>
+          <div class="home-text-rewievs-slider-item-post">
+            мама дочечки Єви, 6 років
+          </div>
+          <div class="home-text-rewievs-slider-item-message">
+            Диттині все дуже сплодобалось, наступного року хочемо повторити ще
+            Диттині все дуже сплодобалось, наступного року хочемо повторити
+            щеДиттині все дуже сплодобалось, наступного року хочемо повторити
+            ще, диттині все дуже сплодобалось, наступного року хочемо повторити
+            ще. Диттині все дуже сплодобалось, наступного року хочемо повторити
+            ще
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% include './components/_home-request.html' %}
+
+  <div class="home-news-fluid">
+    <div class="home-news-centered">
+      <div class="home-news-top">
+        <div class="home-news-top-title">НОВИНИ ТА ПОДІЇ</div>
+        <div class="home-news-top-links">
+          <a href="/" class="home-news-top-links-item">новини</a>
+          <a href="/" class="home-news-top-links-item">події</a>
+          <a href="/" class="home-news-top-links-item">корисні статті</a>
+          <a href="/" class="home-news-top-links-item">усі матеріали</a>
+        </div>
+      </div>
+      <div class="home-news-container">
+        <a href="/" class="home-news-item">
+          <div class="home-news-item-images">
+            <img src="/images/13.jpg" alt="img" />
+            <div class="home-news-item-tag">новини</div>
+          </div>
+          <div class="home-news-item-heading">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit.
+          </div>
+          <div class="home-news-item-date">22/08/2022</div>
+        </a>
+        <a href="/" class="home-news-item">
+          <div class="home-news-item-images">
+            <img src="/images/14.jpg" alt="img" />
+            <div class="home-news-item-tag">подіЇ</div>
+          </div>
+          <div class="home-news-item-heading">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </div>
+          <div class="home-news-item-date">22/08/2022</div>
+        </a>
+        <a href="/" class="home-news-item">
+          <div class="home-news-item-images">
+            <img src="/images/15.jpg" alt="img" />
+            <div class="home-news-item-tag">корисні статті</div>
+          </div>
+          <div class="home-news-item-heading">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </div>
+          <div class="home-news-item-date">22/08/2022</div>
+        </a>
+      </div>
+      <div class="home-news-more">
+        <div class="home-news-more-bg"></div>
+        <div class="home-news-more-btn">більше</div>
+      </div>
+    </div>
+  </div>
+
+  {% include './components/_home-team.html' %}
+
+  <div class="home-virtual">
+    <div class="home-virtual-walk">
+      <div class="home-virtual-walk-img">
+        <img src="/images/18.jpg" alt="img" />
+      </div>
+      <div class="home-virtual-walk-content">
+        <div class="home-virtual-walk-tag">3d-tour</div>
+        <div class="home-virtual-walk-title">віртуальна прогулянка школою</div>
+        <div class="home-virtual-walk-button">
+          <div class="home-virtual-walk-button-bg"></div>
+          <span> Прогулятися </span>
+        </div>
+      </div>
+    </div>
+    <div class="home-virtual-excursion">
+      <div class="home-virtual-excursion-content">
+        <div class="home-virtual-excursion-tag">екскурсія</div>
+        <div class="home-virtual-excursion-title">завітайте до нас у школу</div>
+        <div class="home-virtual-excursion-description">
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat.
+        </div>
+        <div class="home-virtual-excursion-btn">
+          <div class="home-virtual-excursion-btn-bg"></div>
+          <span>домовитися за екскурсію</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% include './components/_home-price.html' %}
+
+  <div class="home-formats-fluid">
+    <div class="home-formats-centered">
+      <div class="home-formats-title">ІНШі ФОРМАТИ НАВЧАННЯ</div>
+      <div class="home-formats-cards">
+        <div class="home-formats-cards-item">
+          <div class="home-formats-cards-item-name">PROJECT SCHOOL</div>
+          <div class="home-formats-cards-item-arrow">
+            <img src="/images/icon17.svg" alt="img" />
+          </div>
+          <div class="home-formats-cards-item-bg-img">
+            <img src="/images/logo.svg" alt="img" />
+          </div>
+        </div>
+        <div class="home-formats-cards-item">
+          <div class="home-formats-cards-item-name">еКСТЕРНАТ</div>
+          <div class="home-formats-cards-item-arrow">
+            <img src="/images/icon17.svg" alt="img" />
+          </div>
+          <div class="home-formats-cards-item-bg-img">
+            <img src="/images/logo.svg" alt="img" />
+          </div>
+        </div>
+        <div class="home-formats-cards-item">
+          <div class="home-formats-cards-item-name">ONLINE SCHOOL</div>
+          <div class="home-formats-cards-item-arrow">
+            <img src="/images/icon17.svg" alt="img" />
+          </div>
+          <div class="home-formats-cards-item-bg-img">
+            <img src="/images/logo.svg" alt="img" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="kindergarten-branches-fluid">
+    <div class="kindergarten-branches-centered">
+      <div class="kindergarten-branches-title">Наші садочки</div>
+      <div
+        class="kindergarten-branches-container js-kindergarten-branches-slider"
+      >
+        <div class="kindergarten-branches-item">
+          <div class="kindergarten-branches-item-inner">
+            <div class="kindergarten-branches-item-image">
+              <img src="/images/52.jpg" alt="img" />
+              <div class="kindergarten-branches-item-tag">Київ</div>
+            </div>
+            <div class="kindergarten-branches-item-plane">
+              <div class="kindergarten-branches-item-plane-name">
+                вул. Угорська, 12Е
+              </div>
+              <div class="kindergarten-branches-item-plane-map">
+                <img src="/images/icon54.svg" alt="img" />
+                <span>Переглянути на карті</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="kindergarten-branches-item">
+          <div class="kindergarten-branches-item-inner">
+            <div class="kindergarten-branches-item-image">
+              <img src="/images/52.jpg" alt="img" />
+              <div class="kindergarten-branches-item-tag white">Львів</div>
+            </div>
+            <div class="kindergarten-branches-item-plane">
+              <div class="kindergarten-branches-item-plane-name">
+                Школа MRIYDIY, Львів, вул. Угорська, 12Е
+              </div>
+              <div class="kindergarten-branches-item-plane-map">
+                <img src="/images/icon54.svg" alt="img" />
+                <span>Переглянути на карті</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="kindergarten-branches-item">
+          <div class="kindergarten-branches-item-inner">
+            <div class="kindergarten-branches-item-image">
+              <img src="/images/52.jpg" alt="img" />
+              <div class="kindergarten-branches-item-tag">Київ</div>
+            </div>
+            <div class="kindergarten-branches-item-plane">
+              <div class="kindergarten-branches-item-plane-name">
+                вул. Угорська, 12Е
+              </div>
+              <div class="kindergarten-branches-item-plane-map">
+                <img src="/images/icon54.svg" alt="img" />
+                <span>Переглянути на карті</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% include './components/_home-social.html' %} {% include
+  './components/_footer.html' %}
+</main>
+
+{% endblock %} {% block footer_scripts %} {% endblock %}

@@ -1,0 +1,31 @@
+.breadcrumbs-fluid {
+  width: 100%;
+  padding: 0 40px;
+  padding-top: 103px;
+  margin-bottom: 30px;
+  @include sm {
+    padding: 0 20px;
+    padding-top: 80px;
+  }
+}
+.breadcrumbs-centered {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.breadcrumbs-item {
+  color: #b6b6b6;
+  font-family: Gilroy;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  &.active {
+    color: #232323;
+  }
+}
+.breadcrumbs-separator {
+}

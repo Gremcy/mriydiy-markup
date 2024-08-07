@@ -1,0 +1,20 @@
+User-agent: *
+Disallow: /asmrt/
+Disallow: /pdfs/
+Disallow: /asmrtists/?DA
+Disallow: /asmrtists/0/
+Disallow: /asmrtists/1/
+Disallow: /asmrtists/2/
+Disallow: /asmrtists/3/
+Disallow: /asmrtists/4/
+Disallow: /asmrtists/5/
+Disallow: /asmrtists/6/
+Disallow: /asmrtists/7/
+Disallow: /asmrtists/8/
+Disallow: /asmrtists/9/
+Disallow: /X/
+Disallow: /CACHE/
+#Disallow: /mts/
+#Disallow: /mts
+Disallow: /cymatics
+Disallow: /asmr/ # oct 10th 2021

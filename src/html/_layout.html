@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    {% include './components/_page-head.html' %}
+  </head>
+
+  <body class="{{ body_class }}">
+    <div class="fluid-wrapper">
+      <div class="cookie-consent-banner" id="cookieConsentBanner">
+        <div class="cookie-consent-banner-left">
+          <p>
+            Ми використовуємо cookie-файли для надання найбільш актуальної
+            інформації. Продовжуючи використовувати сайт, Ви погоджуєтесь з
+            використанням файлів cookie.
+          </p>
+          <a href="/"> Політика конфіденційності </a>
+        </div>
+        <button class="cookie-consent-banner-button" id="acceptCookies">
+          Прийняти
+        </button>
+        <div class="cookie-consent-banner-close-btn">
+          <img src="/images/icon109.svg" alt="" />
+        </div>
+      </div>
+      <div class="menu-overlay"></div>
+
+      <!-- <div class="cursor js-cursor"></div> -->
+
+      {% include './components/_menu.html' %} {% block content %} {% endblock %}
+      {% include './modals/_entry-popup.html' %} {% include
+      './modals/_knowledge-popup.html' %} {% include
+      './modals/_value-popup.html' %} {% include './modals/_stuff-popup.html' %}
+      {% include './modals/_youtube-popup.html' %} {% include
+      './modals/_approach-popup.html' %} {% include
+      './modals/_write-us-popup.html' %} {% include
+      './modals/_call-me-popup.html' %} {% include
+      './modals/_thanks-write-us-popup.html' %} {% include
+      './modals/_thanks-call-me-popup.html' %} {% include
+      './modals/_escort-popup.html' %} {% include
+      './modals/_independent-popup.html' %} {% include
+      './modals/_club-popup.html' %} {% include './modals/_join-club-popup.html'
+      %} {% include './modals/_camp-program-popup.html' %} {% include
+      './modals/_camps-photo-popup.html' %} {% include
+      './modals/_conception-popup.html' %} {% include
+      './modals/_respond-vacancy-popup.html' %} {% include
+      './modals/_send-review-popup.html' %}
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script type="text/javascript">
+      (function(d, w, s) {
+        var widgetHash = '85d2qp52f1p088fw472b';
+        var gcw = d.createElement(s); 
+        gcw.type = 'text/javascript'; 
+        gcw.async = true;
+        gcw.src = '//widgets.binotel.com/getcall/widgets/' + widgetHash + '.js';
+        var sn = d.getElementsByTagName(s)[0]; 
+        if(sn) sn.insertAdjacentElement('beforebegin', gcw);
+      })(document, window, 'script');
+    </script> -->
+    <script src="/jquery.datetimepicker.full.min.js"></script>
+    <script src="js/main.js"></script>
+
+    {# Then add any custom js or explicitely for page #} {% block footer_scripts
+    %} {% endblock %}
+  </body>
+</html>

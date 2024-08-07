@@ -1,0 +1,951 @@
+.camp-page {
+  width: 100%;
+  .kindergarten-integrated-fluid {
+    background: #fff3ec;
+  }
+  .kindergarten-integrated-title {
+    background: #0cc4e9;
+    width: 795px;
+    @include md {
+      width: 757px;
+    }
+    @include sm {
+      width: 96%;
+    }
+  }
+  .kindergarten-integrated-text {
+    border-left: 5px solid #0cc4e9;
+  }
+  .kindergarten-schedule-left-item-text {
+    background: #e61777;
+    color: #fff;
+  }
+  .kindergarten-schedule-left-item-time-start {
+    color: #e61777;
+  }
+  .kindergarten-schedule-left-item-time-end {
+    color: #e61777;
+  }
+  .kindergarten-schedule-more-bg {
+    border: 1px solid #e61777;
+  }
+  .kindergarten-schedule-more-btn {
+    color: #e61777;
+  }
+  .kindergarten-desktop-slider-item-left-name {
+    background: #e61777;
+  }
+  .kindergarten-desktop-slider-mobile-title {
+    background: #e61777;
+  }
+  .home-request-button {
+    background: #e61777;
+  }
+}
+.camp-main {
+  width: 100%;
+}
+.camp-hero-fluid {
+  width: 100%;
+  padding: 0px 30px 50px;
+  @include md {
+    padding: 0px 30px 50px;
+  }
+  @include sm {
+    padding: 0px 20px 40px;
+  }
+}
+.camp-hero-centered {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include sm {
+    flex-direction: column-reverse;
+  }
+}
+.camp-hero-left {
+  width: 50.8%;
+  @include sm {
+    width: 100%;
+  }
+}
+.camp-hero-left-title {
+  font-family: 'Druk Wide Cyr';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  text-transform: uppercase;
+  color: #e61777;
+  margin-bottom: 26px;
+  @include sm {
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}
+.camp-hero-left-description {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #232323;
+  margin-bottom: 60px;
+  @include md {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 40px;
+  }
+  @include sm {
+    margin-bottom: 40px;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+  }
+}
+.camp-hero-left-btns {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  @include md {
+    flex-direction: column;
+  }
+  @include sm {
+    width: 91%;
+    margin: 0 auto;
+  }
+}
+.camp-hero-left-btns-sign {
+  width: 45%;
+  height: 55px;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #e61777;
+  position: relative;
+  cursor: pointer;
+  span {
+    display: block;
+    position: relative;
+    z-index: 3;
+  }
+  &:hover {
+    color: #fff;
+    .camp-hero-left-btns-sign-bg {
+      background: linear-gradient(
+        267.87deg,
+        #fd7168 -14.66%,
+        #e61777 58.48%,
+        #cb095a 99.52%
+      );
+    }
+  }
+  @include md {
+    width: 80%;
+    margin-bottom: 25px;
+  }
+  @include sm {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+.camp-hero-left-btns-sign-bg {
+  width: 100%;
+  height: 100%;
+
+  border: 2px solid #e61777;
+  border-radius: 7px;
+  transform: skew(-25deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.camp-hero-left-btns-pay-wrapper {
+  width: 45%;
+}
+
+.camp-hero-left-btns-pay-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.camp-hero-left-btns-pay {
+  height: 55px;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #fff;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 10px;
+  span {
+    display: block;
+    position: relative;
+    z-index: 3;
+  }
+  &:hover {
+    color: #fff;
+    .camp-hero-left-btns-pay-bg {
+      background: linear-gradient(
+        267.87deg,
+        #fd7168 -14.66%,
+        #e61777 58.48%,
+        #cb095a 99.52%
+      );
+    }
+  }
+  @include md {
+    width: 80%;
+  }
+  @include sm {
+    width: 100%;
+  }
+}
+.camp-hero-left-btns-pay-bg {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #e61777;
+  background: #e61777;
+  border-radius: 7px;
+  transform: skew(-25deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.camp-hero-right {
+  width: 45.8%;
+  img {
+    width: 100%;
+  }
+  @include sm {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
+
+.camp-cards-fluid {
+  width: 100%;
+  margin: 160px 0;
+  padding: 0 30px;
+  @include md {
+    padding: 0 60px;
+  }
+  @include sm {
+    margin: 100px 0;
+    padding: 0 30px;
+  }
+}
+.camp-cards-centered {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+}
+.camp-cards-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.613%;
+  @include md {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+  @include sm {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 9px;
+  }
+}
+.camp-cards-item {
+  width: 23.79%;
+  padding: 60px 22px;
+  background: #fff3ec;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.613%;
+  @include sm {
+    width: auto;
+    padding: 25px;
+    margin-bottom: 0;
+  }
+}
+.camp-cards-item-icon {
+  margin-bottom: 40px;
+  img {
+    width: 111px;
+  }
+  @include sm {
+    margin-bottom: 20px;
+    img {
+      width: 55px;
+    }
+  }
+}
+.camp-cards-item-name {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 120%;
+  text-align: center;
+  color: #232323;
+  @include sm {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
+.camp-get-fluid {
+  width: 100%;
+  margin: 160px 0;
+  padding: 0 30px;
+}
+.camp-get-centered {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+}
+.camp-get-title {
+  font-family: 'Druk Wide Cyr';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  text-transform: uppercase;
+  color: #b6b6b6;
+  margin-bottom: 60px;
+  @include md {
+    text-align: center;
+  }
+  @include sm {
+    font-size: 16px;
+    line-height: 150%;
+  }
+}
+.camp-get-text {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #232323;
+  margin-bottom: 40px;
+}
+.camp-get-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.613%;
+  @include md {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  @include sm {
+    display: unset;
+    .slick-slide {
+      margin: 0 5px;
+    }
+    .slick-dots {
+      width: 84vw;
+      bottom: -50px;
+      display: flex;
+      justify-content: center;
+      li {
+        width: 10px;
+        margin: 0 8px;
+        button:before {
+          content: '';
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background: #ffe1d0;
+          opacity: 1;
+        }
+
+        &.slick-active {
+          button:before {
+            background: #ff5c00;
+          }
+        }
+      }
+    }
+  }
+}
+.camp-get-item {
+  width: 23.79%;
+  margin-bottom: 1.613%;
+  @include md {
+    width: auto;
+    margin-bottom: 0;
+  }
+}
+.camp-get-item-inner {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff3ec;
+  border-radius: 20px;
+  height: 100%;
+}
+.camp-get-item-icon {
+  margin-bottom: 30px;
+  img {
+    width: 111px;
+  }
+  @include sm {
+    text-align: center;
+    img {
+      width: 85px;
+      height: 85px;
+      margin: 0 auto;
+    }
+  }
+}
+.camp-get-item-title {
+  font-family: 'Druk Wide Cyr';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #232323;
+  margin-bottom: 20px;
+}
+.camp-get-item-text {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #232323;
+}
+
+.camp-timers-fluid {
+  width: 100%;
+  margin: 160px 0;
+  padding: 0 30px;
+  @include sm {
+    margin: 100px 0;
+    padding: 0 20px;
+  }
+}
+.camp-timers-centered {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.camp-timer {
+  max-width: 610px;
+  width: 100%;
+  padding: 40px 40px 50px 40px;
+  background: #daf9ff;
+  border-radius: 20px;
+  &:nth-child(2n) {
+    margin-left: 20px;
+  }
+  @include sm {
+    padding: 20px 18px;
+  }
+}
+.camp-timer-title {
+  font-family: 'Druk Wide Cyr';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: #e61777;
+  margin-bottom: 80px;
+  @include sm {
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 25px;
+  }
+}
+.camp-timer-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.camp-timer-el {
+  width: 26.792%;
+}
+.camp-timer-el-num {
+  width: 100%;
+  height: 86px;
+  background: #ffffff;
+  border-radius: 5px;
+  font-family: 'Druk Wide Cyr';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  color: #0cc4e9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 11px;
+  margin-bottom: 15px;
+  padding-left: 8px;
+  @include sm {
+    height: 40px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+.camp-timer-el-caption {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #232323;
+  @include sm {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+.camp-timer-colon {
+  font-family: 'Druk Wide Cyr';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  color: #0cc4e9;
+  transform: translateY(-21px);
+  @include sm {
+    font-size: 20px;
+    line-height: 24px;
+    transform: translateY(-17px);
+  }
+}
+
+.camp-get2-fluid {
+  width: 100%;
+  margin: 160px 0;
+  padding: 0 30px;
+  @include sm {
+    margin: 100px 0;
+    padding: 0 20px;
+  }
+}
+.camp-get2-centered {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+}
+.camp-get2-title {
+  font-family: 'Druk Wide Cyr';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  text-transform: uppercase;
+  color: #b6b6b6;
+  margin-bottom: 80px;
+  @include sm {
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+}
+
+.camp-about-fluid {
+  width: 100%;
+  background: #f5f5f5;
+  padding: 55px 30px;
+  @include sm {
+    padding: 50px 20px;
+  }
+}
+.camp-about-centered {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  @include sm {
+    flex-direction: column;
+  }
+}
+.camp-about-left {
+  width: 40%;
+  @include sm {
+    width: 100%;
+  }
+}
+.camp-about-left-item {
+  margin-bottom: 40px;
+}
+.camp-about-left-item-title {
+  font-family: 'Druk Wide Cyr';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: #232323;
+  margin-bottom: 25px;
+  @include sm {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+.camp-about-left-item-taxt {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #232323;
+  @include sm {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+.camp-about-left-item-info {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #232323;
+  margin-top: 10px;
+}
+.camp-about-right {
+  width: 40%;
+  @include md {
+    width: 52%;
+  }
+  @include sm {
+    width: 100%;
+  }
+}
+.camp-about-right-title {
+  font-family: 'Druk Wide Cyr';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: #232323;
+  margin-bottom: 25px;
+  @include sm {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+.camp-about-right-list {
+  padding-left: 22px;
+  li {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #232323;
+    position: relative;
+    margin-bottom: 10px;
+    &::before {
+      content: '';
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      top: 6px;
+      left: -22px;
+      background: url('../images/icon81.svg') no-repeat center center;
+      background-size: contain;
+    }
+    @include sm {
+      font-size: 20px;
+      line-height: 25px;
+    }
+  }
+}
+
+.camp-program-fluid {
+  width: 100%;
+  margin: 160px 0;
+  padding: 0 30px;
+  @include sm {
+    margin: 100px 0;
+    padding: 0 20px;
+  }
+}
+.camp-program-centered {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+  p {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #232323;
+    margin-bottom: 20px;
+  }
+  ul {
+    padding-left: 33px;
+    li {
+      font-family: 'Gilroy';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: #232323;
+      position: relative;
+      margin-bottom: 20px;
+      &::after {
+        content: '';
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        top: 6px;
+        left: -22px;
+        background: url('../images/icon83.svg') no-repeat center center;
+        background-size: contain;
+      }
+    }
+  }
+  @include sm {
+    p {
+      font-size: 12px;
+      line-height: 14px;
+    }
+    ul {
+      li {
+        font-size: 12px;
+        line-height: 14px;
+        &::after {
+          top: -1px;
+          left: -30px;
+        }
+      }
+    }
+  }
+}
+.camp-program-title {
+  font-family: 'Druk Wide Cyr';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  text-transform: uppercase;
+  color: #b6b6b6;
+  margin-bottom: 80px;
+  @include md {
+    text-align: center;
+  }
+  @include sm {
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 40px;
+  }
+}
+.camp-program-container {
+  padding-top: 40px;
+
+  @include sm {
+    .slick-slide {
+      margin: 0 15px;
+    }
+    .slick-dots {
+      width: 100%;
+      padding: 0 40px;
+      bottom: -40px;
+      li {
+        width: 10px;
+        margin: 0 8px;
+        button:before {
+          content: '';
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background: #ffe1d0;
+          opacity: 1;
+        }
+        &::after {
+          display: none;
+        }
+
+        &.slick-active {
+          button:before {
+            background: #ff5c00;
+          }
+        }
+      }
+    }
+  }
+}
+.camp-program-item {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 80px 40px 40px;
+  background: #fff3ec;
+  border-radius: 40px 40px 0px 0px;
+  margin-bottom: 20px;
+  @include md {
+    align-items: center;
+  }
+  @include sm {
+    flex-direction: column;
+    padding: 30px 65px 30px 30px;
+    border-radius: 20px;
+  }
+}
+.camp-program-item-left {
+  width: 25.114%;
+  height: 230px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  @include md {
+    height: 200px;
+  }
+  @include sm {
+    height: 161px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+.camp-program-item-right {
+  width: 71.233%;
+  border-radius: 20px;
+  @include sm {
+    width: 100%;
+  }
+}
+.camp-program-item-right-day {
+  font-family: 'Druk Wide Cyr';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #232323;
+  margin-bottom: 5px;
+  display: none;
+  @include sm {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+.camp-program-item-right-name {
+  font-family: 'Druk Wide Cyr';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #232323;
+  margin-bottom: 30px;
+  @include sm {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+.camp-program-item-right-text {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #232323;
+  margin-bottom: 20px;
+  @include md {
+    font-size: 14px;
+  }
+  @include sm {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+.camp-program-item-right-btn {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  span {
+    display: block;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #0cc4e9;
+    margin-right: 10px;
+  }
+}
+.camp-program-item-right-number {
+  width: 100px;
+  height: 100px;
+  background: #0cc4e9;
+  border-radius: 50%;
+  position: absolute;
+  right: -20px;
+  top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Druk Wide Cyr';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 150%;
+  text-align: center;
+  color: #ffffff;
+  @include sm {
+    width: 70px;
+    height: 70px;
+    right: -15px;
+    top: 29px;
+    font-size: 19px;
+  }
+}

@@ -1,0 +1,54 @@
+<div class="modal modal--sm js-modal" data-modal="send-review-popup">
+  <div class="modal__overlay js-close-modal"></div>
+
+  <div class="send-review-popup-content">
+    <div class="send-review-popup-close js-close-modal">
+      <img src="/images/close8.svg" alt="img" />
+    </div>
+
+    <form action="#" class="send-review-popup-inner">
+      <div class="send-review-popup-bg">
+        <img src="/images/icon108.svg" alt="" />
+      </div>
+      <div class="send-review-popup-title">
+        Заповніть форму, щоб залишити відгук
+      </div>
+      <div class="send-review-popup-input error">
+        <input type="text" placeholder="ВАше імʼя*" id="sendReviewName" />
+        <div class="input-error-text">*це поле є обов’язковим</div>
+      </div>
+      <div class="send-review-popup-input half">
+        <input type="text" placeholder="номер телефону*" id="sendReviewTel" />
+        <div class="input-error-text">*це поле є обов’язковим</div>
+      </div>
+      <div class="send-review-popup-input half">
+        <input type="text" placeholder="email*" id="sendReviewEmail" />
+        <div class="input-error-text">*це поле є обов’язковим</div>
+      </div>
+      <div class="send-review-popup-input">
+        <input
+          type="text"
+          placeholder="Ім’я вашої дитини"
+          id="sendReviewChild"
+        />
+        <div class="input-error-text">*це поле є обов’язковим</div>
+      </div>
+      <div class="send-review-popup-input">
+        <input
+          type="text"
+          placeholder="скільки років вашій дитині"
+          id="sendReviewAge"
+        />
+        <div class="input-error-text">*це поле є обов’язковим</div>
+      </div>
+      <div class="send-review-popup-textarea">
+        <textarea
+          name="textMess"
+          id="sendReviewTextarea"
+          placeholder="Напишіть відгук"
+        ></textarea>
+      </div>
+      <button type="submit" class="send-review-popup-submit">надіслати</button>
+    </form>
+  </div>
+</div>

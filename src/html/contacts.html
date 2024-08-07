@@ -1,0 +1,238 @@
+{% set body_class = "contacts-page" %}
+{% extends "./_layout.html" %}
+
+{% block content %}
+<main class="contacts-main">
+  {% include './components/_header.html' %}
+
+  <div class="contacts-first-fluid">
+    <div class="contacts-first-centered">
+      <div class="contacts-first-title">
+        контакти
+      </div>
+      <div class="contacts-first-content">
+        <div class="contacts-first-left">
+          <div class="contacts-first-left-wrapper">
+            <div class="contacts-first-left-bg1">
+              <img src="/images/icon48.svg" alt="img">
+            </div>
+            <div class="contacts-first-left-wrapper-head">
+              <div class="contacts-first-left-wrapper-head-rect"></div>
+              <span>E-mail</span>
+            </div>
+            <div class="contacts-first-left-inner">
+              <div class="contacts-first-left-item">
+                <div class="contacts-first-left-item-name">
+                  школа mriydiy
+                </div>
+                <a href="/" class="contacts-first-left-item-link">
+                  mriydiy.school@mriydiy.in.ua
+                </a>
+              </div>
+              <div class="contacts-first-left-item">
+                <div class="contacts-first-left-item-name">
+                  садок mriydiy
+                </div>
+                <a href="/" class="contacts-first-left-item-link">
+                  mriydiy.kids@mriydiy.in.ua
+                </a>
+              </div>
+              <div class="contacts-first-left-item">
+                <div class="contacts-first-left-item-name">
+                  табори mriydiy
+                </div>
+                <a href="/" class="contacts-first-left-item-link">
+                  camps@mriydiy.in.ua
+                </a>
+              </div>
+              <div class="contacts-first-left-item">
+                <div class="contacts-first-left-item-name">
+                  З питань інформаційної співпраці:
+                </div>
+                <a href="/" class="contacts-first-left-item-link">
+                  pr@mriydiy.in.ua
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contacts-first-left-wrapper">
+            <div class="contacts-first-left-wrapper-head">
+              <div class="contacts-first-left-wrapper-head-rect"></div>
+              <span>Наші адреси</span>
+            </div>
+            <div class="contacts-first-left-item">
+              <div class="contacts-first-left-item-name">
+                Адреса школи
+              </div>
+              <a href="/" class="contacts-first-left-item-link">
+                Львів, вул. Угорська, 12Е
+              </a>
+            </div>
+            <div class="contacts-first-left-item">
+              <div class="contacts-first-left-item-name">
+                Адреса садка
+              </div>
+              <div class="contacts-first-left-item-link">
+                Львів, вул. Угорська, 12Е
+              </div>
+            </div>
+          </div>
+
+          <div class="contacts-first-left-wrapper">
+            <div class="contacts-first-left-wrapper-head">
+              <div class="contacts-first-left-wrapper-head-rect"></div>
+              <span>Телефон</span>
+            </div>
+            <div class="contacts-first-left-item">
+              <div class="contacts-first-left-item-name">
+                Телефон
+              </div>
+              <div class="contacts-first-left-item-link">
+                0800 333 191
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contacts-first-right">
+          <div class="contacts-first-right-tabs">
+            <div class="contacts-first-right-tabs-item
+            contacts-tab-question active">
+              <div class="contacts-first-right-tabs-item-bg"></div>
+              <span>запитати</span>
+            </div>
+            <div class="contacts-first-right-tabs-item contacts-tab-call">
+              <div class="contacts-first-right-tabs-item-bg"></div>
+              <span>Замовити дзвінок</spa>
+            </div>
+          </div>
+          <form action="" class="contacts-first-right-form contacts-form-question show">
+            <div class="contacts-first-right-form-input">
+              <input type="text" placeholder="ВАше імʼя*" id="contactName">
+              <div class="error-text">
+                *це поле є обов’язковим
+              </div>
+            </div>
+            <div class="contacts-first-right-form-input">
+              <input type="text" placeholder="номер телефону*" id="contactPhone">
+              <div class="error-text">
+                *це поле є обов’язковим
+              </div>
+            </div>
+            <div class="contacts-first-right-form-input">
+              <input type="text" placeholder="email*" id="contactEmail">
+              <div class="error-text">
+                *це поле є обов’язковим
+              </div>
+            </div>
+            <div class="contacts-first-right-form-input">
+              <input type="text" placeholder="ваше запитання" id="contactAsk">
+              <div class="error-text">
+                *це поле є обов’язковим
+              </div>
+            </div>
+            <button type="submit" class="contacts-first-right-form-btn">
+              надіслати
+            </button>
+          </form>
+
+          <form action="" class="contacts-first-right-form contacts-form-call">
+            <div class="contacts-first-right-form-input">
+              <input type="text" placeholder="ВАше імʼя*" id="contactCallName">
+              <div class="error-text">
+                *це поле є обов’язковим
+              </div>
+            </div>
+            <div class="contacts-first-right-form-input">
+              <input type="text" placeholder="номер телефону*"
+               id="contactCallName">
+              <div class="error-text">
+                *це поле є обов’язковим
+              </div>
+            </div>
+            <button type="submit" class="contacts-first-right-form-btn">
+              надіслати
+            </button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="contacts-school-fluid">
+    <div class="contacts-school-centered">
+      <div class="contacts-school-title">
+        Наші школи
+      </div>
+      <div class="contacts-school-container contacts-school-slider">
+        <div class="contacts-school-item">
+          <div class="contacts-school-item-image">
+            <img src="/images/50.jpg" alt="img">
+          </div>
+          <div class="contacts-school-item-wpap">
+            <div class="contacts-school-item-wrap-title">
+              вул. Угорська, 12Е
+            </div>
+            <a href="/" class="contacts-school-item-wrap-map">
+              <div class="contacts-school-item-wrap-map-icon">
+                <img src="/images/icon49.svg" alt="img">
+              </div>
+              <div class="contacts-school-item-wrap-map-text">
+                Переглянути на карті
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="contacts-school-item">
+          <div class="contacts-school-item-image">
+            <img src="/images/50.jpg" alt="img">
+          </div>
+          <div class="contacts-school-item-wpap">
+            <div class="contacts-school-item-wrap-title">
+              вул. Угорськааааааа а-ааааааааа, 12Е
+            </div>
+            <a href="/" class="contacts-school-item-wrap-map">
+              <div class="contacts-school-item-wrap-map-icon">
+                <img src="/images/icon49.svg" alt="img">
+              </div>
+              <div class="contacts-school-item-wrap-map-text">
+                Переглянути на карті
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="contacts-school-item">
+          <div class="contacts-school-item-image">
+            <img src="/images/50.jpg" alt="img">
+          </div>
+          <div class="contacts-school-item-wpap">
+            <div class="contacts-school-item-wrap-title">
+              вул. Угорська, 12Е
+            </div>
+            <a href="/" class="contacts-school-item-wrap-map">
+              <div class="contacts-school-item-wrap-map-icon">
+                <img src="/images/icon49.svg" alt="img">
+              </div>
+              <div class="contacts-school-item-wrap-map-text">
+                Переглянути на карті
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  {% include './components/_home-social.html' %}
+
+  {% include './components/_footer.html' %}
+</main>
+
+{% endblock %}
+
+{% block footer_scripts %}
+
+{% endblock %}

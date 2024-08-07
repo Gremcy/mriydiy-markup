@@ -1,0 +1,20 @@
+{% set body_class = "error-page" %} {% extends "./_layout.html" %} {% block
+content %}
+<main class="error-main">
+  {% include './components/_header.html' %}
+
+  <div class="error-content">
+    <div class="error-icon">
+      <img src="/images/icon96.svg" alt="i" />
+    </div>
+    <div class="error-title">Здається, такої сторінки не існує.</div>
+    <a href="/" class="error-link">
+      <span>Можливо, те, що ви шукаєте, є на головній</span>
+      <img src="/images/icon97.svg" alt="i" />
+    </a>
+  </div>
+
+  {% include './components/_footer.html' %}
+</main>
+
+{% endblock %} {% block footer_scripts %} {% endblock %}

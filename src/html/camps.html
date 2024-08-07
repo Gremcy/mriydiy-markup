@@ -1,0 +1,1052 @@
+{% set body_class = "camps-page" %} {% extends "./_layout.html" %} {% block
+content %}
+<main class="camps-main">
+  {% include './components/_header.html' %} {% include
+  './components/_breadcrumbs.html' %}
+
+  <div class="camps-first-fluid">
+    <div class="camps-first-centered">
+      <div class="camps-first-left">
+        <div class="camps-first-left-title">MRIYDIY</div>
+        <div class="camps-first-left-tag">ТАБОРИ</div>
+        <div class="camps-first-left-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lacus
+          massa vitae sed eget natoque morbi odio enim.
+        </div>
+        <div class="camps-first-left-btns">
+          <div class="camps-first-left-btns-sign">
+            <div class="camps-first-left-btns-sign-bg"></div>
+            <span>записатися</span>
+          </div>
+          <a href="#camps-shedule" class="camps-first-left-btns-schedule">
+            <div class="camps-first-left-btns-schedule-bg"></div>
+            <span>розклад</span>
+          </a>
+        </div>
+      </div>
+      <div class="camps-first-right">
+        <img src="/images/53.png" alt="img" />
+      </div>
+    </div>
+  </div>
+
+  <div class="camps-conception-fluid">
+    <div class="camps-conception-centered">
+      <div class="camps-conception-title">Концепція</div>
+      <div class="camps-conception-container">
+        <div
+          class="camps-conception-item js-modal-link"
+          data-target="conception-popup"
+        >
+          <div class="camps-conception-item-image">
+            <img src="/images/85.png" alt="i" />
+          </div>
+          <div class="camps-conception-item-down">
+            <span>мрій</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="13"
+              height="20"
+              viewBox="0 0 13 20"
+              fill="none"
+            >
+              <path
+                d="M2 2L11 10L2 18"
+                stroke="#FF5C00"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+        </div>
+        <div
+          class="camps-conception-item js-modal-link"
+          data-target="conception-popup"
+        >
+          <div class="camps-conception-item-image">
+            <img src="/images/86.png" alt="i" />
+          </div>
+          <div class="camps-conception-item-down">
+            <span>дій</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="13"
+              height="20"
+              viewBox="0 0 13 20"
+              fill="none"
+            >
+              <path
+                d="M2 2L11 10L2 18"
+                stroke="#FF5C00"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+        </div>
+        <div
+          class="camps-conception-item js-modal-link"
+          data-target="conception-popup"
+        >
+          <div class="camps-conception-item-image">
+            <img src="/images/87.png" alt="i" />
+          </div>
+          <div class="camps-conception-item-down">
+            <span>сяй</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="13"
+              height="20"
+              viewBox="0 0 13 20"
+              fill="none"
+            >
+              <path
+                d="M2 2L11 10L2 18"
+                stroke="#FF5C00"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+        </div>
+        <div
+          class="camps-conception-item js-modal-link"
+          data-target="conception-popup"
+        >
+          <div class="camps-conception-item-image">
+            <img src="/images/88.png" alt="i" />
+          </div>
+          <div class="camps-conception-item-down">
+            <span>відпочивай</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="13"
+              height="20"
+              viewBox="0 0 13 20"
+              fill="none"
+            >
+              <path
+                d="M2 2L11 10L2 18"
+                stroke="#FF5C00"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="camps-our-fluid">
+    <div class="camps-our-centered">
+      <div class="camps-our-title">
+        Наші табори
+      </div>
+      <div class="camps-our-container">
+        <div class="camps-our-item js-modal-link" data-target="camps-photo-popup">
+          <div class="camps-our-item-top">
+            <div class="camps-our-item-title">
+              Міжнародні
+            </div>
+            <div class="camps-our-item-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel tellus sed dolor purus nunc diam. Lorem ipsum
+              dolor sit amet, consectetur adipiscing elit. Vel tellus sed dolor purus nunc diam. Lorem ipsum dolor sit
+              amet, consectetur adipiscing elit. Vel tellus sed dolor purus nunc diam.
+            </div>
+          </div>
+          <div class="camps-our-item-image">
+            <div class="camps-our-item-image-arrow">
+              <img src="/images/arr9.svg" alt="img">
+            </div>
+            <img src="/images/54.png" alt="img">
+          </div>
+        </div>
+        <div class="camps-our-item js-modal-link" data-target="camps-photo-popup">
+          <div class="camps-our-item-top">
+            <div class="camps-our-item-title">
+              денні
+            </div>
+            <div class="camps-our-item-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel tellus sed dolor purus nunc diam. Lorem ipsum
+              dolor sit amet, consectetur adipiscing elit. Vel tellus sed dolor purus nunc.
+            </div>
+          </div>
+          <div class="camps-our-item-image">
+            <div class="camps-our-item-image-arrow">
+              <img src="/images/arr9.svg" alt="img">
+            </div>
+            <img src="/images/55.png" alt="img">
+          </div>
+        </div>
+        <div class="camps-our-item js-modal-link" data-target="camps-photo-popup">
+          <div class="camps-our-item-top">
+            <div class="camps-our-item-title">
+              виїзні
+            </div>
+            <div class="camps-our-item-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel tellus sed dolor purus nunc diam. Lorem ipsum
+              dolor sit amet, consectetur adipiscing elit. Vel tellus sed dolor purus nunc.
+            </div>
+          </div>
+          <div class="camps-our-item-image">
+            <div class="camps-our-item-image-arrow">
+              <img src="/images/arr9.svg" alt="img">
+            </div>
+            <img src="/images/56.png" alt="img">
+          </div>
+        </div>
+        <div class="camps-our-item js-modal-link" data-target="camps-photo-popup">
+          <div class="camps-our-item-top">
+            <div class="camps-our-item-title">
+              шкільні
+            </div>
+            <div class="camps-our-item-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel tellus sed dolor purus nunc diam. Lorem ipsum
+              dolor sit amet, consectetur adipiscing elit. Vel tellus sed dolor purus nunc.
+            </div>
+          </div>
+          <div class="camps-our-item-image">
+            <div class="camps-our-item-image-arrow">
+              <img src="/images/arr9.svg" alt="img">
+            </div>
+            <img src="/images/57.png" alt="img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="camps-our-mob">
+    <div class="camps-our-mob-title">Наші табори</div>
+    <div class="camps-our-mob-slider">
+      <div
+        class="camps-our-mob-slider-item js-modal-link"
+        data-target="camps-photo-popup"
+      >
+        <div class="camps-our-mob-slider-item-inner">
+          <div class="camps-our-mob-slider-item-top">
+            <div class="camps-our-mob-slider-item-name">Міжнародні</div>
+            <div class="camps-our-mob-slider-item-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel
+              tellus sed dolor purus nunc diam. Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Vel tellus sed dolor purus nunc.
+            </div>
+          </div>
+          <div class="camps-our-mob-slider-item-image">
+            <div class="camps-our-mob-slider-item-image-arr">
+              <img src="/images/arr9.svg" alt="img" />
+            </div>
+            <img src="/images/54.png" alt="img" />
+          </div>
+        </div>
+      </div>
+      <div
+        class="camps-our-mob-slider-item js-modal-link"
+        data-target="camps-photo-popup"
+      >
+        <div class="camps-our-mob-slider-item-inner">
+          <div class="camps-our-mob-slider-item-top">
+            <div class="camps-our-mob-slider-item-name">денні</div>
+            <div class="camps-our-mob-slider-item-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel
+              tellus sed dolor purus nunc diam. Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Vel tellus sed dolor purus nunc.
+            </div>
+          </div>
+          <div class="camps-our-mob-slider-item-image">
+            <div class="camps-our-mob-slider-item-image-arr">
+              <img src="/images/arr9.svg" alt="img" />
+            </div>
+            <img src="/images/55.png" alt="img" />
+          </div>
+        </div>
+      </div>
+      <div
+        class="camps-our-mob-slider-item js-modal-link"
+        data-target="camps-photo-popup"
+      >
+        <div class="camps-our-mob-slider-item-inner">
+          <div class="camps-our-mob-slider-item-top">
+            <div class="camps-our-mob-slider-item-name">виїзні</div>
+            <div class="camps-our-mob-slider-item-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel
+              tellus sed dolor purus nunc diam. Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Vel tellus sed dolor purus nunc.
+            </div>
+          </div>
+          <div class="camps-our-mob-slider-item-image">
+            <div class="camps-our-mob-slider-item-image-arr">
+              <img src="/images/arr9.svg" alt="img" />
+            </div>
+            <img src="/images/56.png" alt="img" />
+          </div>
+        </div>
+      </div>
+      <div
+        class="camps-our-mob-slider-item js-modal-link"
+        data-target="camps-photo-popup"
+      >
+        <div class="camps-our-mob-slider-item-inner">
+          <div class="camps-our-mob-slider-item-top">
+            <div class="camps-our-mob-slider-item-name">шкільні</div>
+            <div class="camps-our-mob-slider-item-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel
+              tellus sed dolor purus nunc diam. Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Vel tellus sed dolor purus nunc.
+            </div>
+          </div>
+          <div class="camps-our-mob-slider-item-image">
+            <div class="camps-our-mob-slider-item-image-arr">
+              <img src="/images/arr9.svg" alt="img" />
+            </div>
+            <img src="/images/57.png" alt="img" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="camps-progress-fluid">
+    <div class="camps-progress-centered">
+      <div class="camps-progress-item">
+        <div class="camps-progress-item-num">5</div>
+        <div class="camps-progress-item-text">років досвіду</div>
+      </div>
+      <div class="camps-progress-item">
+        <div class="camps-progress-item-num">2500</div>
+        <div class="camps-progress-item-text">щасливих дітей</div>
+      </div>
+      <div class="camps-progress-item">
+        <div class="camps-progress-item-num">30</div>
+        <div class="camps-progress-item-text">проведених таборів</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="camps-list-fluid">
+    <div class="camps-shedule-anchor" id="camps-shedule"></div>
+    <div class="camps-list-centered">
+      <div class="camps-list-title">Оберіть табір</div>
+      <div class="camps-list-container">
+        <div class="camp-list-item">
+          <div class="camp-list-item-top">
+            <div class="camp-list-item-title">пришкільний денний табір</div>
+            <div class="camp-list-item-location">
+              <img src="/images/icon56.svg" alt="img" />
+              <span>Львів</span>
+            </div>
+            <div class="camp-list-item-age">для дітей віком 5-10 років</div>
+          </div>
+          <div class="camp-list-item-down">
+            <div class="camp-list-item-bottom">
+              <div class="camp-list-item-bottom-price">Вартість</div>
+              <div class="camp-list-item-bottom-date">
+                <div class="camp-list-item-bottom-date-item">27.03 - 30.03</div>
+                <div class="camp-list-item-bottom-date-item">27.03 - 36.03</div>
+                <div class="camp-list-item-bottom-date-item">27.03 - 38.03</div>
+              </div>
+            </div>
+            <a href="#home-request" class="camp-list-item-btn"> записатися </a>
+          </div>
+        </div>
+        <div class="camp-list-item">
+          <div class="camp-list-item-top">
+            <div class="camp-list-item-title">пришкільний денний табір</div>
+            <div class="camp-list-item-location">
+              <img src="/images/icon56.svg" alt="img" />
+              <span>Львів</span>
+            </div>
+            <div class="camp-list-item-age">
+              для дітей віком 5-10 років пришкільний денний табір пришкільний
+              денний табір пришкільний денний табір пришкільний денний табір
+              пришкільний денний табір пришкільний денний табір пришкільний
+              денний табір для дітей віком 5-10 років пришкільний денний табір
+              пришкільний денний табір пришкільний денний табір пришкільний
+              денний табір пришкільний денний табір пришкільний денний табір
+              пришкільний денний табір
+            </div>
+          </div>
+          <div class="camp-list-item-down">
+            <div class="camp-list-item-bottom">
+              <div class="camp-list-item-bottom-price">Вартість</div>
+              <div class="camp-list-item-bottom-date">
+                <div class="camp-list-item-bottom-date-item">27.03 - 31.03</div>
+                <div class="camp-list-item-bottom-date-item">27.03 - 31.03</div>
+                <div class="camp-list-item-bottom-date-item">27.03 - 31.03</div>
+              </div>
+            </div>
+            <a href="#home-request" class="camp-list-item-btn"> записатися </a>
+          </div>
+        </div>
+        <div class="camp-list-item">
+          <div class="camp-list-item-top">
+            <div class="camp-list-item-title">пришкільний денний табір</div>
+            <div class="camp-list-item-location">
+              <img src="/images/icon56.svg" alt="img" />
+              <span>Львів</span>
+            </div>
+            <div class="camp-list-item-age">для дітей віком 5-10 років</div>
+          </div>
+          <div class="camp-list-item-down">
+            <div class="camp-list-item-bottom">
+              <div class="camp-list-item-bottom-price">Вартість</div>
+              <div class="camp-list-item-bottom-date">
+                <div class="camp-list-item-bottom-date-item">27.03 - 31.03</div>
+                <div class="camp-list-item-bottom-date-item">27.03 - 31.03</div>
+              </div>
+            </div>
+            <a href="#home-request" class="camp-list-item-btn"> записатися </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="camps-bubble-fluid">
+    <div class="camps-bubble-centered">
+      <div class="camps-bubble-title">табори для дітей та підлітків</div>
+      <div class="camps-bubble-container">
+        <div class="camps-bubble-item">
+          <img src="/images/58.png" alt="img" />
+        </div>
+        <div class="camps-bubble-item">
+          <img src="/images/59.png" alt="img" />
+        </div>
+        <div class="camps-bubble-item">
+          <img src="/images/60.png" alt="img" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="camps-actions-fluid">
+    <div class="camps-actions-centered">
+      <div class="camps-actions-item">
+        <div class="camps-actions-item-icon">
+          <img src="/images/icon57.svg" alt="img" />
+        </div>
+        <div class="camps-actions-item-text">
+          мріємо та вчимося досягати мрій
+        </div>
+      </div>
+      <div class="camps-actions-item">
+        <div class="camps-actions-item-icon">
+          <img src="/images/icon58.svg" alt="img" />
+        </div>
+        <div class="camps-actions-item-text">
+          розширюємо світогляд та розвиваємося
+        </div>
+      </div>
+      <div class="camps-actions-item">
+        <div class="camps-actions-item-icon">
+          <img src="/images/icon59.svg" alt="img" />
+        </div>
+        <div class="camps-actions-item-text">
+          багато гуляємо та активно проводимо час
+        </div>
+      </div>
+      <div class="camps-actions-item">
+        <div class="camps-actions-item-icon">
+          <img src="/images/icon60.svg" alt="img" />
+        </div>
+        <div class="camps-actions-item-text">
+          смачно харчуємося тричі на день
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="camps-clubs-fluid">
+    <div class="camps-clubs-centered">
+      <div class="camps-clubs-top">
+        <div class="camps-clubs-top-left">
+          <div class="camps-clubs-title">професійні клуби</div>
+          <div class="camps-clubs-description">
+            Ласкаво просимо до позашкільних клубів MRIYDIY! Місце, де кожен
+            учень може розкрити свій потенціал через захоплюючі заняття, цікаві
+            проєкти та незабутні пригоди. Наші клуби - це можливість поглибити
+            знання улюбленої сфери, розвинути навички співпраці та лідерства,
+            побудувати дружні стосунки та отримати незабутні враження.
+          </div>
+        </div>
+        <div class="camps-clubs-top-logo">
+          <img src="/images/logo3.svg" alt="img" />
+        </div>
+      </div>
+      <div class="camps-clubs-filters">
+        <div class="team-teachers-school-filters">
+          <div class="home-videos-filters clubs-filter">
+            <div class="home-videos-filters-btn">
+              <span>Місто</span>
+              <img src="/images/arr14.svg" alt="img" />
+            </div>
+            <div class="home-filters-drop">
+              <div class="home-filters-drop-inner">
+                <div class="home-filters-drop-item">
+                  <input type="checkbox" id="cb10" />
+                  <label for="cb10"> школа у Києві </label>
+                </div>
+                <div class="home-filters-drop-item">
+                  <input type="checkbox" id="cb11" />
+                  <label for="cb11"> садок у Львові </label>
+                </div>
+                <div class="home-filters-drop-item">
+                  <input type="checkbox" id="cb12" />
+                  <label for="cb12"> школа у Львові </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="home-videos-filters clubs-filter">
+            <div class="home-videos-filters-btn">
+              <span>Напрямок</span>
+              <img src="/images/arr14.svg" alt="img" />
+            </div>
+            <div class="home-filters-drop">
+              <div class="home-filters-drop-inner">
+                <div class="home-filters-drop-item">
+                  <input type="checkbox" id="cb13" />
+                  <label for="cb13"> школа у Києві </label>
+                </div>
+                <div class="home-filters-drop-item">
+                  <input type="checkbox" id="cb14" />
+                  <label for="cb14"> садок у Львові </label>
+                </div>
+                <div class="home-filters-drop-item">
+                  <input type="checkbox" id="cb15" />
+                  <label for="cb15"> школа у Львові </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="home-videos-filters clubs-filter">
+            <div class="home-videos-filters-btn">
+              <span>вік</span>
+              <img src="/images/arr14.svg" alt="img" />
+            </div>
+            <div class="home-filters-drop">
+              <div class="home-filters-drop-inner">
+                <div class="home-filters-drop-item">
+                  <input type="checkbox" id="cb16" />
+                  <label for="cb16"> Молодші </label>
+                </div>
+                <div class="home-filters-drop-item">
+                  <input type="checkbox" id="cb17" />
+                  <label for="cb17"> Підготовка до школи </label>
+                </div>
+                <div class="home-filters-drop-item">
+                  <input type="checkbox" id="cb18" />
+                  <label for="cb18"> Молодша школа </label>
+                </div>
+                <div class="home-filters-drop-item">
+                  <input type="checkbox" id="cb19" />
+                  <label for="cb19"> Середня школа </label>
+                </div>
+                <div class="home-filters-drop-item">
+                  <input type="checkbox" id="cb20" />
+                  <label for="cb20"> Старша школа </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="camps-clubs-container">
+        <div class="camps-clubs-item js-modal-link" data-target="club-popup">
+          <div class="camps-clubs-item-image">
+            <img src="/images/74.jpg" alt="img" />
+            <div class="camps-clubs-item-city lviv">Львів</div>
+          </div>
+          <div class="camps-clubs-item-content">
+            <div class="camps-clubs-item-name">Танці</div>
+            <div class="camps-clubs-item-text">від 10 до 15 років</div>
+            <div class="camps-clubs-item-arrow">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5 2L14 10L5 18"
+                  stroke="#E61777"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="camps-clubs-item js-modal-link" data-target="club-popup">
+          <div class="camps-clubs-item-image">
+            <img src="/images/75.jpg" alt="img" />
+            <div class="camps-clubs-item-city kyiv">Київ</div>
+          </div>
+          <div class="camps-clubs-item-content">
+            <div class="camps-clubs-item-name colour2">
+              ФУТБОЛЬНИЙ КЛУБ “ЕНЕРГІЯ”
+            </div>
+            <div class="camps-clubs-item-text">від 10 до 15 років</div>
+            <div class="camps-clubs-item-arrow">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5 2L14 10L5 18"
+                  stroke="#E61777"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="camps-clubs-item js-modal-link" data-target="club-popup">
+          <div class="camps-clubs-item-image">
+            <img src="/images/76.jpg" alt="img" />
+            <div class="camps-clubs-item-city lviv">Львів</div>
+          </div>
+          <div class="camps-clubs-item-content">
+            <div class="camps-clubs-item-name colour3">Танці</div>
+            <div class="camps-clubs-item-text">від 10 до 15 років</div>
+            <div class="camps-clubs-item-arrow">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5 2L14 10L5 18"
+                  stroke="#E61777"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="camps-clubs-item js-modal-link" data-target="club-popup">
+          <div class="camps-clubs-item-image">
+            <img src="/images/77.jpg" alt="img" />
+            <div class="camps-clubs-item-city lviv">Львів</div>
+          </div>
+          <div class="camps-clubs-item-content">
+            <div class="camps-clubs-item-name colour4">Танці</div>
+            <div class="camps-clubs-item-text">від 10 до 15 років</div>
+            <div class="camps-clubs-item-arrow">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5 2L14 10L5 18"
+                  stroke="#E61777"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="camps-clubs-item js-modal-link" data-target="club-popup">
+          <div class="camps-clubs-item-image">
+            <img src="/images/78.jpg" alt="img" />
+            <div class="camps-clubs-item-city kyiv">Київ</div>
+          </div>
+          <div class="camps-clubs-item-content">
+            <div class="camps-clubs-item-name colour3">Танці</div>
+            <div class="camps-clubs-item-text">від 10 до 15 років</div>
+            <div class="camps-clubs-item-arrow">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5 2L14 10L5 18"
+                  stroke="#E61777"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="camps-clubs-item js-modal-link" data-target="club-popup">
+          <div class="camps-clubs-item-image">
+            <img src="/images/79.jpg" alt="img" />
+            <div class="camps-clubs-item-city lviv">Львів</div>
+          </div>
+          <div class="camps-clubs-item-content">
+            <div class="camps-clubs-item-name colour2">Танці</div>
+            <div class="camps-clubs-item-text">від 10 до 15 років</div>
+            <div class="camps-clubs-item-arrow">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5 2L14 10L5 18"
+                  stroke="#E61777"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="online-faq-more">
+        <div class="online-faq-more-bg"></div>
+        <div class="online-faq-more-btn">більше</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="camps-get-fluid">
+    <div class="camps-get-centered">
+      <div class="camps-get-title">щО ОТРИМАЄ ДИТИНА</div>
+      <div class="camps-get-wrap">
+        <div class="camps-get-container">
+          <div class="camps-get-item">
+            <div class="camps-get-item-icon">
+              <img src="/images/icon62.svg" alt="img" />
+            </div>
+            <div class="camps-get-item-text">
+              практика у різних сферах діяльності
+            </div>
+          </div>
+          <div class="camps-get-item">
+            <div class="camps-get-item-icon">
+              <img src="/images/icon63.svg" alt="img" />
+            </div>
+            <div class="camps-get-item-text">спілкування із однолітками</div>
+          </div>
+          <div class="camps-get-item">
+            <div class="camps-get-item-icon">
+              <img src="/images/icon64.svg" alt="img" />
+            </div>
+            <div class="camps-get-item-text">гармонійний розвиток</div>
+          </div>
+          <div class="camps-get-item">
+            <div class="camps-get-item-icon">
+              <img src="/images/icon65.svg" alt="img" />
+            </div>
+            <div class="camps-get-item-text">розкриття талантів</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="camps-calendar-fluid">
+    <div class="camps-calendar-centered schedule">
+      <div class="camps-calendar-left">
+        <div class="camps-calendar-left-choose">
+          <div class="camps-calendar-left-bg-image">
+            <img src="/images/icon66.svg" alt="img" />
+          </div>
+          <div class="camps-calendar-left-top">
+            <div class="camps-calendar-left-title">Календар таборів</div>
+            <div class="camps-calendar-left-text">
+              Обирайте дату та долучайтесь
+            </div>
+            <div class="camps-calendar-left-tags">
+              <div class="camps-calendar-left-tags-tag">
+                <div class="camps-calendar-left-tags-tag-circle"></div>
+                <div class="camps-calendar-left-tags-tag-name">
+                  міжнародні табори
+                </div>
+              </div>
+              <div class="camps-calendar-left-tags-tag">
+                <div class="camps-calendar-left-tags-tag-circle colour2"></div>
+                <div class="camps-calendar-left-tags-tag-name">шкільні</div>
+              </div>
+              <div class="camps-calendar-left-tags-tag">
+                <div class="camps-calendar-left-tags-tag-circle colour3"></div>
+                <div class="camps-calendar-left-tags-tag-name">виїзні</div>
+              </div>
+              <div class="camps-calendar-left-tags-tag">
+                <div class="camps-calendar-left-tags-tag-circle colour4"></div>
+                <div class="camps-calendar-left-tags-tag-name">денні</div>
+              </div>
+            </div>
+          </div>
+          <div class="camps-calendar-left-btn">
+            <div class="camps-calendar-left-btn-bg"></div>
+            <span>записатися</span>
+          </div>
+        </div>
+
+        <div class="camps-calendar-left-schedule">
+          <div class="camps-calendar-left-schedule-title">ГРАФІК ПОДІЙ</div>
+          <div class="camps-calendar-left-text">
+            <span>19 серпня</span>
+            <span>День відкритих дверей</span>
+          </div>
+
+          <ul class="camps-calendar-schedule-list">
+            <li class="camps-calendar-schedule-list-item">
+              <a href="/">
+                <div class="camps-calendar-schedule-list-item-link-wrapper">
+                  <img src="/images/45.svg" alt="i" />
+                  <span>10:00 - 12:00 - вул. Угорська, 12 Є</span>
+                </div>
+                <div class="camps-calendar-schedule-list-item-more">
+                  <span>детальніше</span>
+                  <img src="/images/arr19.svg" alt="i" />
+                </div>
+              </a>
+            </li>
+            <li class="camps-calendar-schedule-list-item">
+              <a href="/">
+                <div class="camps-calendar-schedule-list-item-link-wrapper">
+                  <img src="/images/45.svg" alt="i" />
+                  <span>10:00 - 12:00 - вул. Угорська, 12 Є</span>
+                </div>
+                <div class="camps-calendar-schedule-list-item-more">
+                  <span>детальніше</span>
+                  <img src="/images/arr19.svg" alt="i" />
+                </div>
+              </a>
+            </li>
+            <li class="camps-calendar-schedule-list-item">
+              <a href="/">
+                <div class="camps-calendar-schedule-list-item-link-wrapper">
+                  <img src="/images/45.svg" alt="i" />
+                  <span>10:00 - 12:00 - вул. Угорська, 12 Є</span>
+                </div>
+                <div class="camps-calendar-schedule-list-item-more">
+                  <span>детальніше</span>
+                  <img src="/images/arr19.svg" alt="i" />
+                </div>
+              </a>
+            </li>
+            <li class="camps-calendar-schedule-list-item">
+              <a href="/">
+                <div class="camps-calendar-schedule-list-item-link-wrapper">
+                  <img src="/images/45.svg" alt="i" />
+                  <span>10:00 - 12:00 - вул. Угорська, 12 Є</span>
+                </div>
+                <div class="camps-calendar-schedule-list-item-more">
+                  <span>детальніше</span>
+                  <img src="/images/arr19.svg" alt="i" />
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="camps-calendar-right">
+        <input id="datetimepicker" type="text" />
+      </div>
+    </div>
+  </div>
+
+  {% include './components/_home-videos-slider.html' %}
+
+  <div class="camps-parents-fluid">
+    <div class="camps-parents-centered">
+      <div class="camps-parents-title">ШО ДУМАЮТЬ БАТЬКИ</div>
+      <div class="camps-parents-slider-wrapper">
+        <div class="camps-parents-slider-arrows">
+          <div class="slick-prev">
+            <img src="/images/arr11.svg" alt="img" />
+          </div>
+          <div class="slick-next">
+            <img src="/images/arr10.svg" alt="img" />
+          </div>
+        </div>
+        <div class="camps-parents-slider">
+          <div
+            class="camps-parents-slider-item js-modal-link"
+            data-target="youtube-popup"
+          >
+            <div class="camps-parents-slider-item-inner">
+              <div class="camps-parents-slider-item-photo">
+                <img src="/images/62.jpg" alt="img" />
+              </div>
+              <div class="camps-parents-slider-item-icon">
+                <img src="/images/icon67.svg" alt="img" />
+              </div>
+              <div class="camps-parents-slider-item-logo">
+                <img src="/images/icon68.svg" alt="img" />
+              </div>
+            </div>
+          </div>
+          <div
+            class="camps-parents-slider-item js-modal-link"
+            data-target="youtube-popup"
+          >
+            <div class="camps-parents-slider-item-inner">
+              <div class="camps-parents-slider-item-photo">
+                <img src="/images/62.jpg" alt="img" />
+              </div>
+              <div class="camps-parents-slider-item-icon">
+                <img src="/images/icon67.svg" alt="img" />
+              </div>
+              <div class="camps-parents-slider-item-logo">
+                <img src="/images/icon68.svg" alt="img" />
+              </div>
+            </div>
+          </div>
+          <div
+            class="camps-parents-slider-item js-modal-link"
+            data-target="youtube-popup"
+          >
+            <div class="camps-parents-slider-item-inner">
+              <div class="camps-parents-slider-item-photo">
+                <img src="/images/62.jpg" alt="img" />
+              </div>
+              <div class="camps-parents-slider-item-icon">
+                <img src="/images/icon67.svg" alt="img" />
+              </div>
+              <div class="camps-parents-slider-item-logo">
+                <img src="/images/icon68.svg" alt="img" />
+              </div>
+            </div>
+          </div>
+          <div
+            class="camps-parents-slider-item js-modal-link"
+            data-target="youtube-popup"
+          >
+            <div class="camps-parents-slider-item-inner">
+              <div class="camps-parents-slider-item-photo">
+                <img src="/images/62.jpg" alt="img" />
+              </div>
+              <div class="camps-parents-slider-item-icon">
+                <img src="/images/icon67.svg" alt="img" />
+              </div>
+              <div class="camps-parents-slider-item-logo">
+                <img src="/images/icon68.svg" alt="img" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="camps-reviews-fluid">
+    <div class="camps-reviews-centered">
+      <div class="camps-reviews-slider-wrapper">
+        <div class="camps-reviews-slider-arrows">
+          <div class="slick-prev">
+            <img src="/images/arr11.svg" alt="img" />
+          </div>
+          <div class="slick-next">
+            <img src="/images/arr10.svg" alt="img" />
+          </div>
+        </div>
+        <div class="camps-reviews-slider">
+          <div class="camps-reviews-slider-item">
+            <div class="camps-reviews-slider-item-inner">
+              <div class="camps-reviews-slider-item-top">
+                <div class="camps-reviews-slider-item-top-left">
+                  <img src="/images/63.jpg" alt="img" />
+                </div>
+                <div class="camps-reviews-slider-item-top-right">
+                  <div class="camps-reviews-slider-item-top-name">
+                    ІВАНЕНКОоооооо СВІТЛАНА
+                  </div>
+                  <div class="camps-reviews-slider-item-top-post">
+                    мама дочечки Єви, 6 років
+                  </div>
+                </div>
+              </div>
+              <div class="camps-reviews-slider-item-text">
+                Диттині все дуже сплодобалось, наступного року хочемо повторити
+                ще Диттині все дуже сплодобалось, наступного року хочемо
+                повторити щеДиттині все дуже сплодобалось, наступного року
+                хочемо повторити ще, диттині все дуже сплодобалось, наступного
+                року хочемо повторити щеДиттині все дуже сплодобалось,
+                наступного року хочемо повторити ще
+              </div>
+            </div>
+          </div>
+          <div class="camps-reviews-slider-item">
+            <div class="camps-reviews-slider-item-inner">
+              <div class="camps-reviews-slider-item-top">
+                <div class="camps-reviews-slider-item-top-left">
+                  <img src="/images/63.jpg" alt="img" />
+                </div>
+                <div class="camps-reviews-slider-item-top-right">
+                  <div class="camps-reviews-slider-item-top-name">
+                    ІВАНЕНКОоооооо СВІТЛАНА
+                  </div>
+                  <div class="camps-reviews-slider-item-top-post">
+                    мама дочечки Єви, 6 років
+                  </div>
+                </div>
+              </div>
+              <div class="camps-reviews-slider-item-text">
+                Диттині все дуже сплодобалось, наступного року хочемо повторити
+                ще Диттині все дуже сплодобалось, наступного року хочемо
+                повторити щеДиттині все дуже сплодобалось, наступного року
+                хочемо повторити ще, диттині все дуже сплодобалось, наступного
+                року хочемо повторити щеДиттині все дуже сплодобалось,
+                наступного року хочемо повторити ще
+              </div>
+            </div>
+          </div>
+          <div class="camps-reviews-slider-item">
+            <div class="camps-reviews-slider-item-inner">
+              <div class="camps-reviews-slider-item-top">
+                <div class="camps-reviews-slider-item-top-left">
+                  <img src="/images/63.jpg" alt="img" />
+                </div>
+                <div class="camps-reviews-slider-item-top-right">
+                  <div class="camps-reviews-slider-item-top-name">
+                    ІВАНЕНКОоооооо СВІТЛАНА
+                  </div>
+                  <div class="camps-reviews-slider-item-top-post">
+                    мама дочечки Єви, 6 років
+                  </div>
+                </div>
+              </div>
+              <div class="camps-reviews-slider-item-text">
+                Диттині все дуже сплодобалось, наступного року хочемо повторити
+                ще Диттині все дуже сплодобалось, наступного року хочемо
+                повторити щеДиттині все дуже сплодобалось, наступного року
+                хочемо повторити ще, диттині все дуже сплодобалось, наступного
+                року хочемо повторити щеДиттині все дуже сплодобалось,
+                наступного року хочемо повторити ще
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% include './components/_home-request.html' %} {% include
+  './components/_home-social.html' %} {% include './components/_footer.html' %}
+</main>
+
+{% endblock %} {% block footer_scripts %} {% endblock %}

@@ -1,0 +1,16 @@
+{% set body_class = "error-page" %} {% extends "./_layout.html" %} {% block
+content %}
+<main class="error-main">
+  {% include './components/_header.html' %}
+
+  <div class="error-content">
+    <div class="error-icon">
+      <img src="/images/icon98.svg" alt="i" />
+    </div>
+    <div class="error-title">Service Unavailable</div>
+  </div>
+
+  {% include './components/_footer.html' %}
+</main>
+
+{% endblock %} {% block footer_scripts %} {% endblock %}

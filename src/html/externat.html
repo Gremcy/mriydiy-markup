@@ -1,0 +1,175 @@
+{% set body_class = "externat-page" %} {% extends "./_layout.html" %} {% block
+content %}
+<main class="externat-main">
+  {% include './components/_header.html' %}
+
+  <div class="kindergarten-first-fluid">
+    <div class="kindergarten-first-centered">
+      <div class="kindergarten-first-left">
+        <div class="kindergarten-first-title">MRIYDIY</div>
+        <div class="externat-first-name">еКСТЕРНАТНЕ НАВЧАННЯ</div>
+        <div class="externat-first-prices">
+          <p>1-4 класи - 30 300 грн/навчальний рік</p>
+          <p>5-10 класи - від 45 450 грн</p>
+          <p>11 клас - 60 600 грн/навчальний рік</p>
+        </div>
+        <div class="online-first-btn">
+          <div class="online-first-btn-bg"></div>
+          <span>записатися</span>
+        </div>
+      </div>
+      <div class="kindergarten-first-right">
+        <div class="kindergarten-first-image">
+          <img src="/images/49.jpg" alt="img" />
+        </div>
+        <div class="kindergarten-first-frame">
+          <svg
+            width="630"
+            height="620"
+            viewBox="0 0 630 620"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M0 0V620H630V0H0ZM404.88 52.6091C353.051 9.13029 277.454 9.13029 225.626 52.6091C207.76 67.5975 186.281 77.8922 163.427 82.4763C97.3501 95.7281 49.9679 154.774 51.7244 222.222C52.3323 245.534 47.052 268.642 36.371 289.372C5.45482 349.373 22.3897 423.063 76.2601 463.694C94.8655 477.713 109.695 496.268 119.281 517.515C147.047 579.08 215.31 611.779 280.688 595.085C303.303 589.328 327.203 589.328 349.818 595.085C415.197 611.779 483.459 579.08 511.224 517.515C520.81 496.268 535.641 477.713 554.245 463.694C608.113 423.063 625.052 349.373 594.126 289.372C583.453 268.642 578.173 245.534 578.781 222.222C580.539 154.774 533.155 95.7281 467.078 82.4763C444.224 77.8922 422.747 67.5975 404.88 52.6091Z"
+              fill="white"
+            />
+            <path
+              class="kindergarten-first-line"
+              d="M476.943 69.7932L477.533 66.8517L476.943 69.7932C546.257 83.688 595.956 145.602 594.113 216.306C593.449 241.754 599.216 266.98 610.872 289.611L610.873 289.612C643.307 352.511 625.543 429.771 569.041 472.371C548.723 487.675 532.526 507.929 522.057 531.123L524.792 532.357L522.057 531.123C492.935 595.667 421.329 629.957 352.745 612.453L352.743 612.453C328.048 606.168 301.954 606.168 277.259 612.453L277.257 612.453C208.675 629.957 137.068 595.667 107.945 531.123L105.211 532.357L107.945 531.123C97.477 507.93 81.2823 487.675 60.9627 472.372C4.45641 429.772 -13.3032 352.511 19.1214 289.612L16.4633 288.242L19.1214 289.612C30.7869 266.981 36.5537 241.754 35.8898 216.306C34.0477 145.602 83.7454 83.6879 153.059 69.7932L152.521 67.1097L153.059 69.7932C178.016 64.7897 201.47 53.554 220.983 37.1916C275.35 -8.39719 354.652 -8.39722 409.021 37.1916C428.534 53.5539 451.987 64.7897 476.943 69.7932Z"
+              stroke="#0CC4E9"
+              stroke-width="6"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="externat-packages-fluid">
+    <div class="externat-packages-centered">
+      <div class="externat-packages-title">пакети</div>
+      <div class="externat-packages-content">
+        <div class="externat-packages-content-text">
+          Для наших учнів, які з певних причин не зможуть долучитися до навчання
+          в приміщенні школи, ми підготували різні пакети екстернату
+        </div>
+        <div class="externat-packages-content-icon">
+          <img src="/images/icon41.svg" alt="img" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="externat-variants-fluid">
+    <div class="externat-variants-center">
+      <div
+        class="externat-variants-item item1 js-modal-link"
+        data-target="escort-popup"
+      >
+        <div class="externat-variants-item-rect">
+          <div class="externat-variants-item-title">
+            Організаційний супровід
+          </div>
+          <div class="externat-variants-item-bottom">
+            <span>пакет №1</span>
+            <img src="/images/icon42.svg" alt="img" />
+          </div>
+          <div class="externat-variants-item-icon">
+            <img src="/images/icon44.svg" alt="img" />
+          </div>
+        </div>
+      </div>
+      <div
+        class="externat-variants-item item2 js-modal-link"
+        data-target="independent-popup"
+      >
+        <div class="externat-variants-item-rect">
+          <div class="externat-variants-item-title">самостійне навчання</div>
+          <div class="externat-variants-item-bottom">
+            <img src="/images/icon43.svg" alt="img" />
+            <span>пакет №2</span>
+          </div>
+          <div class="externat-variants-item-icon">
+            <img src="/images/icon44.svg" alt="img" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="externat-form-fluid">
+    <div class="externat-form-rectangle"></div>
+    <div class="externat-form-centered">
+      <div class="externat-form-left">
+        <div class="externat-form-left-item">
+          <div class="externat-form-left-item-heading">ДЛЯ КОГО</div>
+          <p>Для учнів 1 - 11 класів</p>
+        </div>
+        <div class="externat-form-left-item">
+          <div class="externat-form-left-item-heading">ВАРТІСТЬ НАВЧАННЯ</div>
+          <p class="tablet-left">
+            <strong>1-4 класи </strong> - 30 300 грн/навчальний рік
+          </p>
+          <p class="tablet-left">
+            <strong>5-10 класи* </strong> - від 45 450 грн
+          </p>
+          <p class="tablet-left">
+            <strong>11 клас </strong> - 60 600 грн/навчальний рік
+          </p>
+        </div>
+        <div class="externat-form-left-item">
+          <div class="externat-form-left-item-heading">КОЛИ МОЖНА ВСТУПИТИ</div>
+          <p>Вже зараз</p>
+        </div>
+        <div class="externat-form-left-info">
+          *вартість зумовлена різною кількістю годин консультацій за основними
+          предметами, тому відрізняється за циклами: 5-6 клас, 7-8 класи , 9-10
+          класи
+        </div>
+      </div>
+      <form class="externat-form-right">
+        <div class="externat-form-right-title">
+          Щоб вступити заповніть форму
+        </div>
+        <div class="externat-form-select">
+          <select required class="select-css">
+            <option value="" disabled selected hidden>Оберіть пакет</option>
+            <option value="організаційний супровід">
+              організаційний супровід
+            </option>
+            <option value="самостійне начання">самостійне начання</option>
+          </select>
+        </div>
+        <div class="externat-form-input">
+          <input type="text" placeholder="ВАше імʼя*" id="externatName" />
+          <div class="error-text">*це поле є обов’язковим</div>
+        </div>
+        <div class="externat-form-input">
+          <input type="text" placeholder="номер телефону*" id="externatPhone" />
+          <div class="error-text">*це поле є обов’язковим</div>
+        </div>
+        <div class="externat-form-input">
+          <input type="text" placeholder="email*" id="externatEmail" />
+          <div class="error-text">*це поле є обов’язковим</div>
+        </div>
+        <div class="externat-form-input">
+          <input
+            type="text"
+            placeholder="скільки років вашій дитині"
+            id="externatOld"
+          />
+          <div class="error-text">*це поле є обов’язковим</div>
+        </div>
+        <button class="externat-form-btn" type="submit">надіслати</button>
+      </form>
+    </div>
+  </div>
+
+  {% include './components/_home-social.html' %} {% include
+  './components/_footer.html' %}
+</main>
+
+{% endblock %} {% block footer_scripts %} {% endblock %}
